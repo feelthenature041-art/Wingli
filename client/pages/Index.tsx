@@ -15,30 +15,32 @@ export default function Index() {
   return (
     <>
       <section className="container py-10 md:py-16">
-        <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-tr from-sky-50 via-sky-50 to-sky-100">
-          <div className="grid md:grid-cols-2 items-stretch">
-            {/* Image column - full bleed inside the card, layered above background */}
-            <div className="relative hidden md:block min-h-[320px]">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
-                alt="Cabin crew with airplane"
-                className="absolute inset-0 h-full w-full object-cover object-left z-10 pointer-events-none select-none"
-              />
-            </div>
+        <div className="relative overflow-hidden rounded-2xl border bg-sky-50/60">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
+            alt="Cabin crew with airplane"
+            className="absolute inset-0 h-full w-full object-cover object-left pointer-events-none select-none"
+          />
+          <div className="absolute inset-0 bg-gradient-to-tr from-sky-900/0 via-white/0 to-white/40" />
 
-            {/* Content column */}
-            <div className="p-8 md:p-12">
-              <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">
+          <div className="relative z-10 grid md:grid-cols-2 items-center min-h-[340px] md:min-h-[380px] p-6 md:p-12">
+            <div className="hidden md:block" />
+            <div className="md:col-start-2">
+              <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight drop-shadow-sm">
                 Got Questions? We’ve Got Answers
               </h1>
-              <p className="mt-4 text-slate-600 text-base md:text-lg max-w-xl">
+              <p className="mt-4 text-slate-700 text-base md:text-lg max-w-xl drop-shadow-[0_1px_0_rgba(255,255,255,0.25)]">
                 Real guidance from real air hostesses to help you own your career path.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <Button asChild className="rounded-full px-6">
                   <Link to="/find-a-mentor">Chat with Mentor</Link>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full px-6">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="rounded-full px-6 bg-white/60 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80"
+                >
                   <Link to="/find-a-mentor">Talk to Mentor</Link>
                 </Button>
               </div>

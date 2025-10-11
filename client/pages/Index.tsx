@@ -2,56 +2,32 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const logos = [
-  {
-    alt: "IndiGo",
-    src:
-      "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fd47127e93b894105aec4b162d93dd7bb?format=webp&width=300",
-  },
-  {
-    alt: "Air India",
-    src:
-      "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F284e22c205354c83b2ec321280fe6b74?format=webp&width=300",
-  },
-  {
-    alt: "Akasa Air",
-    src:
-      "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fbbd1ee947a2e4c369dae1c6cb104c381?format=webp&width=300",
-  },
-  {
-    alt: "SpiceJet",
-    src:
-      "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F7fc2c2b88a04462dbfe5a1a6f83e47ea?format=webp&width=300",
-  },
-  {
-    alt: "Air India Express",
-    src:
-      "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Ff7f8e9c177fe4bdcacc8b13738dbd1e8?format=webp&width=300",
-  },
-  {
-    alt: "Qatar Airways",
-    src:
-      "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F867f469fd0cb4b1ebe9a87ae7f6326fe?format=webp&width=300",
-  },
-  {
-    alt: "Emirates",
-    src:
-      "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fbccf07849d2b48f08ba82e23d8072f5b?format=webp&width=300",
-  },
+  { alt: "IndiGo", src: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fd47127e93b894105aec4b162d93dd7bb?format=webp&width=300" },
+  { alt: "Air India", src: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F284e22c205354c83b2ec321280fe6b74?format=webp&width=300" },
+  { alt: "Akasa Air", src: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fbbd1ee947a2e4c369dae1c6cb104c381?format=webp&width=300" },
+  { alt: "SpiceJet", src: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F7fc2c2b88a04462dbfe5a1a6f83e47ea?format=webp&width=300" },
+  { alt: "Air India Express", src: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Ff7f8e9c177fe4bdcacc8b13738dbd1e8?format=webp&width=300" },
+  { alt: "Qatar Airways", src: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F867f469fd0cb4b1ebe9a87ae7f6326fe?format=webp&width=300" },
+  { alt: "Emirates", src: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fbccf07849d2b48f08ba82e23d8072f5b?format=webp&width=300" },
 ];
 
 export default function Index() {
   return (
     <>
       <section className="container py-10 md:py-16">
-        <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-tr from-sky-50 via-sky-50 to-sky-100 p-8 md:p-12">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1200"
-            alt="Cabin crew with airplane"
-            className="pointer-events-none select-none hidden md:block absolute left-0 bottom-0 md:-left-4 md:bottom-0 w-[520px] max-w-[52%]"
-          />
+        <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-tr from-sky-50 via-sky-50 to-sky-100">
+          <div className="grid md:grid-cols-2 items-stretch">
+            {/* Image column - full bleed inside the card, layered above background */}
+            <div className="relative hidden md:block min-h-[320px]">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
+                alt="Cabin crew with airplane"
+                className="absolute inset-0 h-full w-full object-cover object-left z-10 pointer-events-none select-none"
+              />
+            </div>
 
-          <div className="relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="md:col-start-2">
+            {/* Content column */}
+            <div className="p-8 md:p-12">
               <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">
                 Got Questions? We’ve Got Answers
               </h1>

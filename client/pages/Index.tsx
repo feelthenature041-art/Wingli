@@ -14,33 +14,28 @@ const logos = [
 export default function Index() {
   return (
     <>
-      <section className="container py-10 md:py-16">
-        <div className="relative overflow-hidden rounded-2xl border bg-sky-50/60">
+      <section className="container py-6 md:py-8">
+        <div className="relative overflow-hidden rounded-2xl border">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
             alt="Cabin crew with airplane"
             className="absolute inset-0 h-full w-full object-cover object-left pointer-events-none select-none"
           />
-          <div className="absolute inset-0 bg-gradient-to-tr from-sky-900/0 via-white/0 to-white/40" />
 
-          <div className="relative z-10 grid md:grid-cols-2 items-center min-h-[340px] md:min-h-[380px] p-6 md:p-12">
+          <div className="relative z-10 grid md:grid-cols-2 items-center min-h-[320px] md:min-h-[360px] p-6 md:p-10">
             <div className="hidden md:block" />
             <div className="md:col-start-2">
-              <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight drop-shadow-sm">
+              <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">
                 Got Questions? We’ve Got Answers
               </h1>
-              <p className="mt-4 text-slate-700 text-base md:text-lg max-w-xl drop-shadow-[0_1px_0_rgba(255,255,255,0.25)]">
+              <p className="mt-4 text-slate-700 text-base md:text-lg max-w-xl">
                 Real guidance from real air hostesses to help you own your career path.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <Button asChild className="rounded-full px-6">
                   <Link to="/find-a-mentor">Chat with Mentor</Link>
                 </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="rounded-full px-6 bg-white/60 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80"
-                >
+                <Button asChild variant="outline" className="rounded-full px-6 bg-white/70 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80">
                   <Link to="/find-a-mentor">Talk to Mentor</Link>
                 </Button>
               </div>
@@ -49,17 +44,19 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="container py-8 md:py-10">
+      <section className="py-6 md:py-8">
         <h3 className="text-center text-slate-700 font-semibold">Get guidance from</h3>
-        <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-8 items-center justify-items-center">
-          {logos.map((l) => (
-            <img
-              key={l.alt}
-              src={l.src}
-              alt={l.alt}
-              className="h-8 md:h-10 object-contain grayscale hover:grayscale-0 transition"
-            />
-          ))}
+        <div className="mt-6 overflow-hidden">
+          <div className="flex items-center gap-12 w-[200%] animate-marquee">
+            {[...logos, ...logos].map((l, i) => (
+              <img
+                key={l.alt + i}
+                src={l.src}
+                alt={l.alt}
+                className="h-9 md:h-10 object-contain"
+              />
+            ))}
+          </div>
         </div>
       </section>
     </>

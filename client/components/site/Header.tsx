@@ -11,17 +11,11 @@ export default function Header() {
     <header className="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden>
-            <defs>
-              <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stopColor="hsl(var(--primary))" />
-                <stop offset="100%" stopColor="hsl(215 80% 55%)" />
-              </linearGradient>
-            </defs>
-            <path fill="url(#g)" d="M6 40c8-4 18-16 28-18s18 2 24 4c-8 0-14 2-22 8S18 46 6 40Z"/>
-            <path fill="url(#g)" d="M6 40c12 4 23 1 32-6 4-3 8-5 14-6-10 6-18 22-36 22-4 0-8-4-10-10Z"/>
-          </svg>
-          <span className="text-xl font-bold tracking-tight">wingli</span>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3186ff092c5e4853b64463d211bf2750?format=webp&width=300"
+            alt="wingli"
+            className="h-7 w-auto"
+          />
         </Link>
         <nav className="hidden md:flex items-center gap-2">
           <NavLink to="/" className={navItemCls} end>

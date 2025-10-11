@@ -13,46 +13,93 @@ export default function Footer() {
             />
           </div>
           <p className="text-white/80 max-w-sm">
-            Your flight path to success. Book trusted cabin crew mentors for every milestone.
+            Your flight path to success. Book trusted cabin crew mentors for
+            every milestone.
           </p>
         </div>
 
         <div>
           <h4 className="font-semibold mb-3">PLATFORM</h4>
           <ul className="space-y-2 text-white/80">
-            <li><Link to="/about" className="hover:text-white">About</Link></li>
-            <li><Link to="/how-it-works" className="hover:text-white">How it works?</Link></li>
-            <li><Link to="/blog" className="hover:text-white">Blog</Link></li>
+            <li>
+              <Link to="/about" className="hover:text-white">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/how-it-works" className="hover:text-white">
+                How it works?
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" className="hover:text-white">
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
           <h4 className="font-semibold mb-3">SUPPORT</h4>
           <ul className="space-y-2 text-white/80">
-            <li><Link to="/faq" className="hover:text-white">FAQ</Link></li>
-            <li><Link to="/contact" className="hover:text-white">Contact Us</Link></li>
-            <li><Link to="/help" className="hover:text-white">Help Center</Link></li>
+            <li>
+              <Link to="/faq" className="hover:text-white">
+                FAQ
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-white">
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/help" className="hover:text-white">
+                Help Center
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
           <h4 className="font-semibold mb-3">LEGAL</h4>
           <ul className="space-y-2 text-white/80">
-            <li><Link to="/privacy" className="hover:text-white">Privacy Policy</Link></li>
-            <li><Link to="/terms" className="hover:text-white">Terms and Services</Link></li>
+            <li>
+              <Link to="/privacy" className="hover:text-white">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/terms" className="hover:text-white">
+                Terms and Services
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/15">
         <div className="container flex flex-col md:flex-row items-center justify-between py-6 gap-4">
-          <p className="text-white/70 text-sm">© {new Date().getFullYear()} wingli. All rights reserved.</p>
+          <p className="text-white/70 text-sm">
+            © {new Date().getFullYear()} wingli. All rights reserved.
+          </p>
           <div className="flex items-center gap-4 opacity-90">
             <a href="#" aria-label="Instagram" className="hover:opacity-100">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F01a5dbfcdbad470095658414e2902318?format=webp&width=64" alt="Instagram" className="h-5 invert brightness-0" />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F01a5dbfcdbad470095658414e2902318?format=webp&width=64"
+                alt="Instagram"
+                className="h-5 invert brightness-0"
+              />
             </a>
             <a href="#" aria-label="YouTube" className="hover:opacity-100">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fa7bf0e95c9ba44029a6ad5a17e97b936?format=webp&width=64" alt="YouTube" className="h-5 invert brightness-0" />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fa7bf0e95c9ba44029a6ad5a17e97b936?format=webp&width=64"
+                alt="YouTube"
+                className="h-5 invert brightness-0"
+              />
             </a>
             <a href="#" aria-label="Facebook" className="hover:opacity-100">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fb23ca1f889eb408c82fdeaf9a3980845?format=webp&width=64" alt="Facebook" className="h-5 invert brightness-0" />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fb23ca1f889eb408c82fdeaf9a3980845?format=webp&width=64"
+                alt="Facebook"
+                className="h-5 invert brightness-0"
+              />
             </a>
           </div>
         </div>

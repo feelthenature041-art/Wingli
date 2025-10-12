@@ -13,6 +13,7 @@ import About from "@/pages/About";
 import HowItWorks from "@/pages/HowItWorks";
 import Blog from "@/pages/Blog";
 import FindMentor from "@/pages/FindMentor";
+import Login from "@/pages/Login";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/find-a-mentor" element={<FindMentor />} />
+            <Route path="/login" element={<Login />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

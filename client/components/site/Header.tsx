@@ -1,7 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-const navItemCls = "px-3 py-2 text-sm font-medium transition-colors text-foreground/70 hover:text-foreground";
+const navItemCls =
+  "px-3 py-2 text-sm font-medium transition-colors text-foreground/70 hover:text-foreground";
 
 export default function Header() {
   return (
@@ -15,10 +16,18 @@ export default function Header() {
           />
         </a>
         <nav className="hidden md:flex items-center gap-2">
-          <a href="/" className={navItemCls}>Home</a>
-          <a href="/about" className={navItemCls}>About</a>
-          <a href="/how-it-works" className={navItemCls}>How it works</a>
-          <a href="/blog" className={navItemCls}>Blog</a>
+          <a href="/" className={navItemCls}>
+            Home
+          </a>
+          <a href="/about" className={navItemCls}>
+            About
+          </a>
+          <a href="/how-it-works" className={navItemCls}>
+            How it works
+          </a>
+          <a href="/blog" className={navItemCls}>
+            Blog
+          </a>
         </nav>
         <div className="flex items-center gap-3">
           <Button asChild className="rounded-full px-5 h-10">

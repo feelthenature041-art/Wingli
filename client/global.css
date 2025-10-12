@@ -123,12 +123,18 @@
     max-width: 96% !important;
   }
   @media (min-width: 768px) {
-    .container { max-width: 94% !important; }
+    .container {
+      max-width: 94% !important;
+    }
   }
   @media (min-width: 1024px) {
-    .container { max-width: 92% !important; }
+    .container {
+      max-width: 92% !important;
+    }
   }
   @media (min-width: 1280px) {
-    .container { max-width: 90% !important; }
+    .container {
+      max-width: 90% !important;
+    }
   }
 }

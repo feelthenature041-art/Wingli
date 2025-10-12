@@ -1,6 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Search, Calendar, MessageSquare, Quote } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const logos = [
   {
@@ -49,13 +54,18 @@ export default function Index() {
                 Got Questions? We’ve Got Answers
               </h1>
               <p className="mt-4 text-slate-700 text-base md:text-lg max-w-xl">
-                Real guidance from real air hostesses to help you own your career path.
+                Real guidance from real air hostesses to help you own your
+                career path.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <Button asChild className="rounded-full px-6">
                   <a href="/find-a-mentor">Chat with Mentor</a>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full px-6 bg-white/70 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="rounded-full px-6 bg-white/70 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80"
+                >
                   <a href="/find-a-mentor">Talk to Mentor</a>
                 </Button>
               </div>
@@ -124,32 +134,46 @@ export default function Index() {
           Featured Mentors
         </h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {[{
-            name: "Aisha Khan",
-            airline: "IndiGo",
-            years: 6,
-            img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
-          }, {
-            name: "Neha Sharma",
-            airline: "Air India",
-            years: 8,
-            img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
-          }, {
-            name: "Sara Malik",
-            airline: "Qatar Airways",
-            years: 5,
-            img: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop",
-          }, {
-            name: "Riya Patel",
-            airline: "Emirates",
-            years: 7,
-            img: "https://images.unsplash.com/photo-1545996124-0501ebae84d0?q=80&w=800&auto=format&fit=crop",
-          }].map((m) => (
-            <div key={m.name} className="rounded-2xl border overflow-hidden bg-white">
-              <img src={m.img} alt={m.name} className="h-44 w-full object-cover" />
+          {[
+            {
+              name: "Aisha Khan",
+              airline: "IndiGo",
+              years: 6,
+              img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+            },
+            {
+              name: "Neha Sharma",
+              airline: "Air India",
+              years: 8,
+              img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+            },
+            {
+              name: "Sara Malik",
+              airline: "Qatar Airways",
+              years: 5,
+              img: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop",
+            },
+            {
+              name: "Riya Patel",
+              airline: "Emirates",
+              years: 7,
+              img: "https://images.unsplash.com/photo-1545996124-0501ebae84d0?q=80&w=800&auto=format&fit=crop",
+            },
+          ].map((m) => (
+            <div
+              key={m.name}
+              className="rounded-2xl border overflow-hidden bg-white"
+            >
+              <img
+                src={m.img}
+                alt={m.name}
+                className="h-44 w-full object-cover"
+              />
               <div className="p-5">
                 <h3 className="font-semibold text-lg">{m.name}</h3>
-                <p className="text-muted-foreground text-sm">{m.airline} • {m.years}+ yrs</p>
+                <p className="text-muted-foreground text-sm">
+                  {m.airline} • {m.years}+ yrs
+                </p>
                 <Button asChild className="mt-4 w-full rounded-full">
                   <a href="/find-a-mentor">Book Session</a>
                 </Button>
@@ -165,11 +189,17 @@ export default function Index() {
           Success Stories
         </h2>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
-          {["My mentor helped me prepare for my IndiGo interview — I got selected!", "Great grooming tips and confidence boost. Booked my second session already.", "Mock interview felt real. Feedback was spot-on and actionable."].map((t, i) => (
+          {[
+            "My mentor helped me prepare for my IndiGo interview — I got selected!",
+            "Great grooming tips and confidence boost. Booked my second session already.",
+            "Mock interview felt real. Feedback was spot-on and actionable.",
+          ].map((t, i) => (
             <figure key={i} className="rounded-2xl border p-6 bg-white/70">
               <Quote className="h-6 w-6 text-primary/60" />
               <blockquote className="mt-3 text-slate-800">{t}</blockquote>
-              <figcaption className="mt-3 text-sm text-muted-foreground">— Aspirant {i + 1}</figcaption>
+              <figcaption className="mt-3 text-sm text-muted-foreground">
+                — Aspirant {i + 1}
+              </figcaption>
             </figure>
           ))}
         </div>
@@ -185,31 +215,38 @@ export default function Index() {
             <AccordionItem value="item-1">
               <AccordionTrigger>Who are the mentors?</AccordionTrigger>
               <AccordionContent>
-                Verified cabin crew from leading airlines with years of experience.
+                Verified cabin crew from leading airlines with years of
+                experience.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger>How do I book a session?</AccordionTrigger>
               <AccordionContent>
-                Choose a mentor, pick a topic and time, then confirm payment to book.
+                Choose a mentor, pick a topic and time, then confirm payment to
+                book.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger>What topics can I ask about?</AccordionTrigger>
               <AccordionContent>
-                Interview prep, grooming, communication, training, career paths, and more.
+                Interview prep, grooming, communication, training, career paths,
+                and more.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Do you support chat and calls?</AccordionTrigger>
+              <AccordionTrigger>
+                Do you support chat and calls?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes—sessions can be chat-only or audio/video calls based on your preference.
+                Yes—sessions can be chat-only or audio/video calls based on your
+                preference.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
               <AccordionTrigger>Can I reschedule or cancel?</AccordionTrigger>
               <AccordionContent>
-                You can reschedule up to 24 hours before the session. Cancellations follow mentor policy.
+                You can reschedule up to 24 hours before the session.
+                Cancellations follow mentor policy.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

@@ -37,7 +37,7 @@ export default function Index() {
   return (
     <>
       <section className="container py-6 md:py-8">
-        <div className="relative rounded-2xl border overflow-hidden">
+        <div className="relative rounded-2xl overflow-hidden">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
             alt="Cabin crew with airplane"

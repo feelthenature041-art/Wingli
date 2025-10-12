@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { Search, Calendar, MessageSquare, Quote } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -57,14 +56,14 @@ export default function Index() {
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <Button asChild className="rounded-full px-6">
-                  <Link to="/find-a-mentor">Chat with Mentor</Link>
+                  <a href="/find-a-mentor">Chat with Mentor</a>
                 </Button>
                 <Button
                   asChild
                   variant="outline"
                   className="rounded-full px-6 bg-white/70 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80"
                 >
-                  <Link to="/find-a-mentor">Talk to Mentor</Link>
+                  <a href="/find-a-mentor">Talk to Mentor</a>
                 </Button>
               </div>
             </div>
@@ -159,7 +158,7 @@ export default function Index() {
                 <h3 className="font-semibold text-lg">{m.name}</h3>
                 <p className="text-muted-foreground text-sm">{m.airline} • {m.years}+ yrs</p>
                 <Button asChild className="mt-4 w-full rounded-full">
-                  <Link to="/find-a-mentor">Book Session</Link>
+                  <a href="/find-a-mentor">Book Session</a>
                 </Button>
               </div>
             </div>

@@ -37,28 +37,25 @@ export default function Index() {
   return (
     <>
       <section className="container py-6 md:py-8">
-        <div className="rounded-2xl border overflow-hidden">
-          <div className="grid md:grid-cols-2 items-center gap-4 p-6 md:p-10">
-            <div className="order-1 md:order-none flex items-center justify-center">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
-                alt="Cabin crew with airplane"
-                className="block w-full h-full max-h-[360px] md:max-h-[420px] object-contain"
-              />
-            </div>
-            <div>
+        <div className="relative rounded-2xl border overflow-hidden">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
+            alt="Cabin crew with airplane"
+            className="block w-full h-auto object-contain"
+          />
+          <div className="absolute inset-0 pointer-events-none flex items-center">
+            <div className="ml-auto max-w-xl p-6 md:p-10 pointer-events-auto">
               <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">
                 Got Questions? We’ve Got Answers
               </h1>
               <p className="mt-4 text-slate-700 text-base md:text-lg max-w-xl">
-                Real guidance from real air hostesses to help you own your
-                career path.
+                Real guidance from real air hostesses to help you own your career path.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <Button asChild className="rounded-full px-6">
                   <a href="/find-a-mentor">Chat with Mentor</a>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full px-6">
+                <Button asChild variant="outline" className="rounded-full px-6 bg-white/70 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80">
                   <a href="/find-a-mentor">Talk to Mentor</a>
                 </Button>
               </div>

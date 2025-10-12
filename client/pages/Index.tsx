@@ -37,16 +37,16 @@ export default function Index() {
   return (
     <>
       <section className="container py-6 md:py-8">
-        <div className="relative overflow-hidden rounded-2xl border">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
-            alt="Cabin crew with airplane"
-            className="absolute inset-0 h-full w-full object-cover object-left pointer-events-none select-none"
-          />
-
-          <div className="relative z-10 grid md:grid-cols-2 items-center min-h-[320px] md:min-h-[360px] p-6 md:p-10">
-            <div className="hidden md:block" />
-            <div className="md:col-start-2">
+        <div className="rounded-2xl border overflow-hidden">
+          <div className="grid md:grid-cols-2 items-center gap-4 p-6 md:p-10">
+            <div className="order-1 md:order-none flex items-center justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
+                alt="Cabin crew with airplane"
+                className="block w-full h-full max-h-[360px] md:max-h-[420px] object-contain"
+              />
+            </div>
+            <div>
               <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">
                 Got Questions? We’ve Got Answers
               </h1>
@@ -58,11 +58,7 @@ export default function Index() {
                 <Button asChild className="rounded-full px-6">
                   <a href="/find-a-mentor">Chat with Mentor</a>
                 </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="rounded-full px-6 bg-white/70 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80"
-                >
+                <Button asChild variant="outline" className="rounded-full px-6">
                   <a href="/find-a-mentor">Talk to Mentor</a>
                 </Button>
               </div>

@@ -75,7 +75,7 @@ export default function Index() {
                 key={l.alt + i}
                 src={l.src}
                 alt={l.alt}
-                className="h-7 md:h-8 object-contain"
+                className="h-6 md:h-7 object-contain"
               />
             ))}
           </div>

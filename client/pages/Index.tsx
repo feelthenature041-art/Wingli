@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Search, Calendar, MessageSquare, Quote } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const logos = [
   {
@@ -85,6 +87,140 @@ export default function Index() {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Section 2: How it works */}
+      <section className="container py-10 md:py-14">
+        <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
+          How Wingli Works
+        </h2>
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border p-6 bg-white/70">
+            <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center">
+              <Search className="h-6 w-6" />
+            </div>
+            <h3 className="mt-4 font-bold text-lg">Choose Your Mentor</h3>
+            <p className="text-muted-foreground mt-1">
+              Browse real air hostesses from top airlines.
+            </p>
+          </div>
+          <div className="rounded-2xl border p-6 bg-white/70">
+            <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center">
+              <Calendar className="h-6 w-6" />
+            </div>
+            <h3 className="mt-4 font-bold text-lg">Book a Session</h3>
+            <p className="text-muted-foreground mt-1">
+              Pick interview prep, grooming, or training topics.
+            </p>
+          </div>
+          <div className="rounded-2xl border p-6 bg-white/70">
+            <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center">
+              <MessageSquare className="h-6 w-6" />
+            </div>
+            <h3 className="mt-4 font-bold text-lg">Get Real Guidance</h3>
+            <p className="text-muted-foreground mt-1">
+              Chat or call your mentor and clear all doubts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: Featured mentors */}
+      <section className="container py-10 md:py-14">
+        <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
+          Featured Mentors
+        </h2>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {[{
+            name: "Aisha Khan",
+            airline: "IndiGo",
+            years: 6,
+            img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+          }, {
+            name: "Neha Sharma",
+            airline: "Air India",
+            years: 8,
+            img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+          }, {
+            name: "Sara Malik",
+            airline: "Qatar Airways",
+            years: 5,
+            img: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop",
+          }, {
+            name: "Riya Patel",
+            airline: "Emirates",
+            years: 7,
+            img: "https://images.unsplash.com/photo-1545996124-0501ebae84d0?q=80&w=800&auto=format&fit=crop",
+          }].map((m) => (
+            <div key={m.name} className="rounded-2xl border overflow-hidden bg-white">
+              <img src={m.img} alt={m.name} className="h-44 w-full object-cover" />
+              <div className="p-5">
+                <h3 className="font-semibold text-lg">{m.name}</h3>
+                <p className="text-muted-foreground text-sm">{m.airline} • {m.years}+ yrs</p>
+                <Button asChild className="mt-4 w-full rounded-full">
+                  <Link to="/find-a-mentor">Book Session</Link>
+                </Button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Section 4: Testimonials */}
+      <section className="container py-10 md:py-14">
+        <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
+          Success Stories
+        </h2>
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          {["My mentor helped me prepare for my IndiGo interview — I got selected!", "Great grooming tips and confidence boost. Booked my second session already.", "Mock interview felt real. Feedback was spot-on and actionable."].map((t, i) => (
+            <figure key={i} className="rounded-2xl border p-6 bg-white/70">
+              <Quote className="h-6 w-6 text-primary/60" />
+              <blockquote className="mt-3 text-slate-800">{t}</blockquote>
+              <figcaption className="mt-3 text-sm text-muted-foreground">— Aspirant {i + 1}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      {/* Section 5: FAQs */}
+      <section className="container py-10 md:py-14">
+        <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
+          FAQs
+        </h2>
+        <div className="mt-6 mx-auto max-w-3xl">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Who are the mentors?</AccordionTrigger>
+              <AccordionContent>
+                Verified cabin crew from leading airlines with years of experience.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>How do I book a session?</AccordionTrigger>
+              <AccordionContent>
+                Choose a mentor, pick a topic and time, then confirm payment to book.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>What topics can I ask about?</AccordionTrigger>
+              <AccordionContent>
+                Interview prep, grooming, communication, training, career paths, and more.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>Do you support chat and calls?</AccordionTrigger>
+              <AccordionContent>
+                Yes—sessions can be chat-only or audio/video calls based on your preference.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>Can I reschedule or cancel?</AccordionTrigger>
+              <AccordionContent>
+                You can reschedule up to 24 hours before the session. Cancellations follow mentor policy.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
     </>

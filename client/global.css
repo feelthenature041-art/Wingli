@@ -21,8 +21,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 60% 10%;
 
-    /* Brand: deep aviation blue */
-    --primary: 215 66% 35%;
+    /* Brand: dark blue #1b3d5a */
+    --primary: 208 54% 23%;
     --primary-foreground: 0 0% 100%;
 
     /* Light blue surfaces */
@@ -40,18 +40,18 @@
 
     --border: 214 28% 88%;
     --input: 214 28% 88%;
-    --ring: 215 66% 35%;
+    --ring: 208 54% 23%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 216 43% 15%;
     --sidebar-foreground: 210 40% 96%;
-    --sidebar-primary: 215 66% 35%;
+    --sidebar-primary: 208 54% 23%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 215 29% 22%;
     --sidebar-accent-foreground: 210 40% 96%;
     --sidebar-border: 215 29% 22%;
-    --sidebar-ring: 215 66% 35%;
+    --sidebar-ring: 208 54% 23%;
   }
 
   .dark {

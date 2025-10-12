@@ -22,19 +22,19 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">PLATFORM</h4>
           <ul className="space-y-2 text-white/80">
             <li>
-              <Link to="/about" className="hover:text-white">
+              <a href="/about" className="hover:text-white">
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/how-it-works" className="hover:text-white">
+              <a href="/how-it-works" className="hover:text-white">
                 How it works?
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/blog" className="hover:text-white">
+              <a href="/blog" className="hover:text-white">
                 Blog
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -42,19 +42,19 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">SUPPORT</h4>
           <ul className="space-y-2 text-white/80">
             <li>
-              <Link to="/faq" className="hover:text-white">
+              <a href="/faq" className="hover:text-white">
                 FAQ
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-white">
+              <a href="/contact" className="hover:text-white">
                 Contact Us
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/help" className="hover:text-white">
+              <a href="/help" className="hover:text-white">
                 Help Center
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -62,14 +62,14 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">LEGAL</h4>
           <ul className="space-y-2 text-white/80">
             <li>
-              <Link to="/privacy" className="hover:text-white">
+              <a href="/privacy" className="hover:text-white">
                 Privacy Policy
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/terms" className="hover:text-white">
+              <a href="/terms" className="hover:text-white">
                 Terms and Services
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

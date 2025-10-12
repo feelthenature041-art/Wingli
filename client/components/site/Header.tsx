@@ -30,6 +30,9 @@ export default function Header() {
           </a>
         </nav>
         <div className="flex items-center gap-3">
+          <Button asChild variant="outline" className="rounded-full px-5 h-10">
+            <a href="/login">Login</a>
+          </Button>
           <Button asChild className="rounded-full px-5 h-10">
             <a href="/find-a-mentor">Find a Mentor</a>
           </Button>

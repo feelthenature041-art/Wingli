@@ -64,11 +64,11 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-6 md:py-8">
+      <section className="pt-4 md:pt-6 pb-6 md:pb-8">
         <h2 className="text-center text-slate-700 font-extrabold text-xl md:text-2xl">
-          Get guidance from
+          Mentors from Leading Airlines
         </h2>
-        <div className="mt-6 overflow-hidden">
+        <div className="mt-4 overflow-hidden">
           <div className="flex items-center gap-12 w-[200%] animate-marquee">
             {[...logos, ...logos].map((l, i) => (
               <img

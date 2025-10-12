@@ -118,17 +118,17 @@
     letter-spacing: 0.01em;
   }
 
-  /* Constrain site width to ~80% with comfortable margins */
+  /* Constrain site width to ~90% with comfortable margins */
   .container {
-    max-width: 92% !important;
+    max-width: 96% !important;
   }
   @media (min-width: 768px) {
-    .container { max-width: 85% !important; }
+    .container { max-width: 94% !important; }
   }
   @media (min-width: 1024px) {
-    .container { max-width: 82% !important; }
+    .container { max-width: 92% !important; }
   }
   @media (min-width: 1280px) {
-    .container { max-width: 80% !important; }
+    .container { max-width: 90% !important; }
   }
 }

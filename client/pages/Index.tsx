@@ -53,21 +53,21 @@ export default function Index() {
           </picture>
           <div className="absolute inset-0 pointer-events-none flex items-center">
             <div className="ml-auto max-w-xl p-6 md:p-10 pointer-events-auto">
-              <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">
+              <h1 className="text-2xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">
                 Got Questions? We’ve Got Answers
               </h1>
-              <p className="mt-4 text-slate-700 text-base md:text-lg max-w-xl">
+              <p className="mt-3 md:mt-4 text-slate-700 text-sm md:text-lg max-w-xl">
                 Real guidance from real air hostesses to help you own your
                 career path.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <Button asChild className="rounded-full px-6">
+                <Button asChild className="rounded-full h-9 px-4 md:h-10 md:px-6 text-sm md:text-base">
                   <a href="/find-a-mentor">Chat with Mentor</a>
                 </Button>
                 <Button
                   asChild
                   variant="outline"
-                  className="rounded-full px-6 bg-white/70 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80"
+                  className="rounded-full h-9 px-4 md:h-10 md:px-6 text-sm md:text-base bg-white/70 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80"
                 >
                   <a href="/find-a-mentor">Talk to Mentor</a>
                 </Button>

@@ -43,11 +43,14 @@ export default function Index() {
     <>
       <section className="container py-6 md:py-8">
         <div className="relative rounded-2xl overflow-hidden">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
-            alt="Cabin crew with airplane"
-            className="block w-full h-auto object-contain"
-          />
+          <picture className="block w-full">
+            <source media="(max-width: 767px)" srcSet="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fe83ee2d25c284fb7b3c885fbc03254f5?format=webp&width=1200" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
+              alt="Cabin crew with airplane"
+              className="block w-full h-auto object-contain"
+            />
+          </picture>
           <div className="absolute inset-0 pointer-events-none flex items-center">
             <div className="ml-auto max-w-xl p-6 md:p-10 pointer-events-auto">
               <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">

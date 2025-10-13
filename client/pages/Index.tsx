@@ -46,7 +46,7 @@ export default function Index() {
           <picture className="block w-full">
             <source
               media="(max-width: 767px)"
-              srcSet="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fe83ee2d25c284fb7b3c885fbc03254f5?format=webp&width=1200"
+              srcSet="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fa23ee112b4c6499f8d485a7a3286f0ca?format=webp&width=1200"
             />
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
@@ -55,8 +55,8 @@ export default function Index() {
             />
           </picture>
           <div className="absolute inset-0 pointer-events-none flex items-center">
-            <div className="ml-auto max-w-xl p-6 md:p-10 pointer-events-auto">
-              <h1 className="text-2xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">
+            <div className="ml-auto max-w-xl p-4 md:p-10 pointer-events-auto">
+              <h1 className="text-2xl md:text-5xl font-extrabold tracking-tight text-primary leading-tight">
                 Got Questions? We’ve Got Answers
               </h1>
               <p className="mt-3 md:mt-4 text-slate-700 text-sm md:text-lg max-w-xl">
@@ -73,7 +73,7 @@ export default function Index() {
                 <Button
                   asChild
                   variant="outline"
-                  className="rounded-full h-9 px-4 md:h-10 md:px-6 text-sm md:text-base bg-white/70 backdrop-blur-sm border-white/70 text-slate-700 hover:bg-white/80"
+                  className="rounded-full h-9 px-4 md:h-10 md:px-6 text-sm md:text-base bg-white/75 backdrop-blur-sm border-[#1b3d5a]/30 text-[#1b3d5a] hover:bg-white/90"
                 >
                   <a href="/find-a-mentor">Talk to Mentor</a>
                 </Button>

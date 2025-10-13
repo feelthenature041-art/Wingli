@@ -54,7 +54,8 @@ export default function Index() {
               <div>
                 <h1 className="text-[22px] font-extrabold leading-snug text-primary">
                   Got Questions?
-                  <br />We’ve Got Answers
+                  <br />
+                  We’ve Got Answers
                 </h1>
                 <p className="mt-2 text-slate-700 text-[13px] leading-snug">
                   Real guidance from real air hostesses to help you on your
@@ -66,7 +67,11 @@ export default function Index() {
               <Button asChild className="h-9 px-4 rounded-full text-sm">
                 <a href="/find-a-mentor">Chat with Mentor</a>
               </Button>
-              <Button asChild variant="outline" className="h-9 px-4 rounded-full text-sm bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a]">
+              <Button
+                asChild
+                variant="outline"
+                className="h-9 px-4 rounded-full text-sm bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a]"
+              >
                 <a href="/find-a-mentor">Talk to Mentor</a>
               </Button>
             </div>
@@ -93,7 +98,11 @@ export default function Index() {
                 <Button asChild className="rounded-full h-10 px-6 text-base">
                   <a href="/find-a-mentor">Chat with Mentor</a>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full h-10 px-6 text-base bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] hover:bg-white/90">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="rounded-full h-10 px-6 text-base bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] hover:bg-white/90"
+                >
                   <a href="/find-a-mentor">Talk to Mentor</a>
                 </Button>
               </div>

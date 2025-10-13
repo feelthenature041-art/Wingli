@@ -42,39 +42,58 @@ export default function Index() {
   return (
     <>
       <section className="container py-6 md:py-8">
-        <div className="relative rounded-2xl overflow-hidden">
-          <picture className="block w-full">
-            <source
-              media="(max-width: 767px)"
-              srcSet="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F06b45d943d354a8fa12f91c8e495963f?format=webp&width=1200"
-            />
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
-              alt="Cabin crew with airplane"
-              className="block w-full h-auto object-contain"
-            />
-          </picture>
+        {/* Mobile layout */}
+        <div className="md:hidden">
+          <div className="rounded-2xl border bg-white/70 p-3 shadow-sm">
+            <div className="grid grid-cols-[120px_1fr] gap-3 items-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F06b45d943d354a8fa12f91c8e495963f?format=webp&width=800"
+                alt="Cabin crew with airplane"
+                className="h-28 w-full object-contain"
+              />
+              <div>
+                <h1 className="text-[22px] font-extrabold leading-snug text-primary">
+                  Got Questions?
+                  <br />We’ve Got Answers
+                </h1>
+                <p className="mt-2 text-slate-700 text-[13px] leading-snug">
+                  Real guidance from real air hostesses to help you on your
+                  career path.
+                </p>
+              </div>
+            </div>
+            <div className="mt-3 flex gap-2">
+              <Button asChild className="h-9 px-4 rounded-full text-sm">
+                <a href="/find-a-mentor">Chat with Mentor</a>
+              </Button>
+              <Button asChild variant="outline" className="h-9 px-4 rounded-full text-sm bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a]">
+                <a href="/find-a-mentor">Talk to Mentor</a>
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop/tablet layout */}
+        <div className="relative rounded-2xl overflow-hidden hidden md:block">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
+            alt="Cabin crew with airplane"
+            className="block w-full h-auto object-contain"
+          />
           <div className="absolute inset-0 pointer-events-none flex items-center">
-            <div className="ml-auto max-w-xl p-4 md:p-10 pointer-events-auto">
-              <h1 className="text-2xl md:text-5xl font-extrabold tracking-tight text-primary leading-tight">
+            <div className="ml-auto max-w-xl p-10 pointer-events-auto">
+              <h1 className="text-5xl font-extrabold tracking-tight text-primary leading-tight">
                 Got Questions? We’ve Got Answers
               </h1>
-              <p className="mt-3 md:mt-4 text-slate-700 text-sm md:text-lg max-w-xl">
+              <p className="mt-4 text-slate-700 text-lg max-w-xl">
                 Real guidance from real air hostesses to help you own your
                 career path.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <Button
-                  asChild
-                  className="rounded-full h-9 px-4 md:h-10 md:px-6 text-sm md:text-base"
-                >
+                <Button asChild className="rounded-full h-10 px-6 text-base">
                   <a href="/find-a-mentor">Chat with Mentor</a>
                 </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="rounded-full h-9 px-4 md:h-10 md:px-6 text-sm md:text-base bg-white/75 backdrop-blur-sm border-[#1b3d5a]/30 text-[#1b3d5a] hover:bg-white/90"
-                >
+                <Button asChild variant="outline" className="rounded-full h-10 px-6 text-base bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] hover:bg-white/90">
                   <a href="/find-a-mentor">Talk to Mentor</a>
                 </Button>
               </div>
@@ -137,10 +156,10 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Section 3: Featured mentors */}
+      {/* Section 3: Top Rated Mentors */}
       <section className="container py-10 md:py-14">
         <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
-          Featured Mentors
+          Top Rated Mentors
         </h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {[
@@ -192,10 +211,10 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Section 4: Testimonials */}
+      {/* Section 4: Testimonial */}
       <section className="container py-10 md:py-14">
         <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
-          Success Stories
+          Testimonial
         </h2>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {[

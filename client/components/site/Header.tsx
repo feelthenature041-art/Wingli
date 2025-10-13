@@ -1,8 +1,43 @@
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navItemCls =
   "px-3 py-2 text-sm font-medium transition-colors text-foreground/70 hover:text-foreground";
+
+function MobileMenu() {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="md:hidden">
+      <button
+        aria-label="Open menu"
+        className="inline-flex h-10 w-10 items-center justify-center rounded-md border bg-white/70 backdrop-blur hover:bg-white"
+        onClick={() => setOpen((v) => !v)}
+      >
+        {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+      </button>
+      {open && (
+        <div className="absolute left-0 right-0 top-16 border-b border-t bg-white/95 backdrop-blur">
+          <nav className="container py-3 grid gap-2">
+            <a href="/" className={navItemCls} onClick={() => setOpen(false)}>Home</a>
+            <a href="/about" className={navItemCls} onClick={() => setOpen(false)}>About</a>
+            <a href="/how-it-works" className={navItemCls} onClick={() => setOpen(false)}>How it works</a>
+            <a href="/blog" className={navItemCls} onClick={() => setOpen(false)}>Blog</a>
+            <div className="flex items-center gap-2 pt-2">
+              <Button asChild variant="outline" className="h-9 px-4 rounded-full">
+                <a href="/login" onClick={() => setOpen(false)}>Login</a>
+              </Button>
+              <Button asChild className="h-9 px-4 rounded-full">
+                <a href="/find-a-mentor" onClick={() => setOpen(false)}>Find a Mentor</a>
+              </Button>
+            </div>
+          </nav>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Header() {
   return (
@@ -29,7 +64,7 @@ export default function Header() {
             Blog
           </a>
         </nav>
-        <div className="flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3">
           <Button asChild variant="outline" className="rounded-full px-5 h-10">
             <a href="/login">Login</a>
           </Button>
@@ -37,6 +72,7 @@ export default function Header() {
             <a href="/find-a-mentor">Find a Mentor</a>
           </Button>
         </div>
+        <MobileMenu />
       </div>
     </header>
   );

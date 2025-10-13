@@ -46,7 +46,7 @@ export default function Index() {
           <picture className="block w-full">
             <source
               media="(max-width: 767px)"
-              srcSet="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fa23ee112b4c6499f8d485a7a3286f0ca?format=webp&width=1200"
+              srcSet="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F06b45d943d354a8fa12f91c8e495963f?format=webp&width=1200"
             />
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"

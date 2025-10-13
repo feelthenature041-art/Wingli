@@ -44,7 +44,10 @@ export default function Index() {
       <section className="container py-6 md:py-8">
         <div className="relative rounded-2xl overflow-hidden">
           <picture className="block w-full">
-            <source media="(max-width: 767px)" srcSet="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fe83ee2d25c284fb7b3c885fbc03254f5?format=webp&width=1200" />
+            <source
+              media="(max-width: 767px)"
+              srcSet="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fe83ee2d25c284fb7b3c885fbc03254f5?format=webp&width=1200"
+            />
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8a5cc1e75abc4ba0b088a3b236680251?format=webp&width=1600"
               alt="Cabin crew with airplane"
@@ -61,7 +64,10 @@ export default function Index() {
                 career path.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <Button asChild className="rounded-full h-9 px-4 md:h-10 md:px-6 text-sm md:text-base">
+                <Button
+                  asChild
+                  className="rounded-full h-9 px-4 md:h-10 md:px-6 text-sm md:text-base"
+                >
                   <a href="/find-a-mentor">Chat with Mentor</a>
                 </Button>
                 <Button

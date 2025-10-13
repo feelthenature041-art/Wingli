@@ -20,16 +20,44 @@ function MobileMenu() {
       {open && (
         <div className="absolute left-0 right-0 top-16 border-b border-t bg-white/95 backdrop-blur">
           <nav className="container py-3 grid gap-2">
-            <a href="/" className={navItemCls} onClick={() => setOpen(false)}>Home</a>
-            <a href="/about" className={navItemCls} onClick={() => setOpen(false)}>About</a>
-            <a href="/how-it-works" className={navItemCls} onClick={() => setOpen(false)}>How it works</a>
-            <a href="/blog" className={navItemCls} onClick={() => setOpen(false)}>Blog</a>
+            <a href="/" className={navItemCls} onClick={() => setOpen(false)}>
+              Home
+            </a>
+            <a
+              href="/about"
+              className={navItemCls}
+              onClick={() => setOpen(false)}
+            >
+              About
+            </a>
+            <a
+              href="/how-it-works"
+              className={navItemCls}
+              onClick={() => setOpen(false)}
+            >
+              How it works
+            </a>
+            <a
+              href="/blog"
+              className={navItemCls}
+              onClick={() => setOpen(false)}
+            >
+              Blog
+            </a>
             <div className="flex items-center gap-2 pt-2">
-              <Button asChild variant="outline" className="h-9 px-4 rounded-full">
-                <a href="/login" onClick={() => setOpen(false)}>Login</a>
+              <Button
+                asChild
+                variant="outline"
+                className="h-9 px-4 rounded-full"
+              >
+                <a href="/login" onClick={() => setOpen(false)}>
+                  Login
+                </a>
               </Button>
               <Button asChild className="h-9 px-4 rounded-full">
-                <a href="/find-a-mentor" onClick={() => setOpen(false)}>Find a Mentor</a>
+                <a href="/find-a-mentor" onClick={() => setOpen(false)}>
+                  Find a Mentor
+                </a>
               </Button>
             </div>
           </nav>

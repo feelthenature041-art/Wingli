@@ -288,10 +288,10 @@ export default function Index() {
         </div>
       </section>
 
-      {/* How it works and Top Rated Mentors - Two Column Layout */}
+      {/* How it works and Top Rated Mentors - Two Column Layout (1/3 and 2/3) */}
       <section className="container py-10 md:py-14">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-          {/* How it works */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
+          {/* How it works - 1/3 width */}
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
               How Wingli Works
@@ -315,31 +315,29 @@ export default function Index() {
                 },
               ].map((step, idx) => (
                 <div key={step.num}>
-                  <div className="rounded-2xl border border-slate-200 p-6 bg-white relative z-10">
-                    <div className="flex gap-4">
-                      <div className="h-14 w-14 rounded-full bg-primary text-white grid place-items-center font-bold text-xl flex-shrink-0">
+                  <div className="flex gap-4">
+                    <div className="flex flex-col items-center flex-shrink-0">
+                      <div className="h-12 w-12 rounded-full bg-primary text-white grid place-items-center font-bold text-lg">
                         {step.num}
                       </div>
-                      <div className="pt-1">
-                        <h3 className="font-bold text-lg">{step.title}</h3>
-                        <p className="text-muted-foreground text-sm mt-1">
-                          {step.desc}
-                        </p>
-                      </div>
+                      {idx < 2 && (
+                        <div className="w-1 h-10 bg-slate-300 mt-1"></div>
+                      )}
+                    </div>
+                    <div className="pb-6 pt-1">
+                      <h3 className="font-bold text-base">{step.title}</h3>
+                      <p className="text-muted-foreground text-sm mt-1">
+                        {step.desc}
+                      </p>
                     </div>
                   </div>
-                  {idx < 2 && (
-                    <div className="flex justify-start ml-6 py-0">
-                      <div className="w-1 h-6 bg-slate-300"></div>
-                    </div>
-                  )}
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Top Rated Mentors */}
-          <div>
+          {/* Top Rated Mentors - 2/3 width */}
+          <div className="lg:col-span-2">
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
                 Top rated Mentors

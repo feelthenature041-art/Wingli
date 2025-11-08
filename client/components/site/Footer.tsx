@@ -10,7 +10,7 @@ export default function Footer() {
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3186ff092c5e4853b64463d211bf2750?format=webp&width=300"
               alt="wingli"
-              className="h-8 w-auto"
+              className="h-8 w-auto brightness-0 invert"
             />
           </div>
           <p className="text-white/80 max-w-sm text-sm">

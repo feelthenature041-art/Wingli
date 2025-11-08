@@ -288,81 +288,86 @@ export default function Index() {
         </div>
       </section>
 
-      {/* How it works */}
+      {/* How it works and Top Rated Mentors - Two Column Layout */}
       <section className="container py-10 md:py-14">
-        <h2 className="text-left text-2xl md:text-3xl font-extrabold tracking-tight">
-          How Wingli Works
-        </h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
-          <div className="rounded-2xl border p-6 bg-white/70">
-            <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center font-bold">
-              1
-            </div>
-            <h3 className="mt-4 font-bold text-lg">Choose Your Mentor</h3>
-            <p className="text-muted-foreground mt-1">
-              Browse real air hostesses from top airlines.
-            </p>
-          </div>
-          <div className="rounded-2xl border p-6 bg-white/70">
-            <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center font-bold">
-              2
-            </div>
-            <h3 className="mt-4 font-bold text-lg">Book a Session</h3>
-            <p className="text-muted-foreground mt-1">
-              Pick interview prep, grooming, or training topics.
-            </p>
-          </div>
-          <div className="rounded-2xl border p-6 bg-white/70">
-            <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center font-bold">
-              3
-            </div>
-            <h3 className="mt-4 font-bold text-lg">Get Real Guidance</h3>
-            <p className="text-muted-foreground mt-1">
-              Chat or call your mentor and clear all doubts.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Top Rated Mentors */}
-      <section className="container py-10 md:py-14">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-            Top rated Mentors
-          </h2>
-          <Button asChild variant="outline" className="rounded-full gap-2">
-            <a href="/find-a-mentor">
-              All Mentors <ChevronRight className="h-4 w-4" />
-            </a>
-          </Button>
-        </div>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {mentors.map((m) => (
-            <div
-              key={m.name}
-              className="rounded-2xl border overflow-hidden bg-white"
-            >
-              <img
-                src={m.img}
-                alt={m.name}
-                className="h-48 w-full object-cover bg-slate-200"
-              />
-              <div className="p-5">
-                <h3 className="font-semibold text-lg">{m.name}</h3>
-                <p className="text-muted-foreground text-sm">
-                  {m.airline} • {m.years}+ yrs
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+          {/* How it works */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
+              How Wingli Works
+            </h2>
+            <div className="mt-8 grid gap-6">
+              <div className="rounded-2xl border p-6 bg-white/70">
+                <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center font-bold">
+                  1
+                </div>
+                <h3 className="mt-4 font-bold text-lg">Choose Your Mentor</h3>
+                <p className="text-muted-foreground mt-1">
+                  Browse real air hostesses from top airlines.
                 </p>
-                <Button asChild className="mt-4 w-full rounded-full">
-                  <a href="/find-a-mentor">View Profile</a>
-                </Button>
+              </div>
+              <div className="rounded-2xl border p-6 bg-white/70">
+                <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center font-bold">
+                  2
+                </div>
+                <h3 className="mt-4 font-bold text-lg">Book a Session</h3>
+                <p className="text-muted-foreground mt-1">
+                  Pick interview prep, grooming, or training topics.
+                </p>
+              </div>
+              <div className="rounded-2xl border p-6 bg-white/70">
+                <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center font-bold">
+                  3
+                </div>
+                <h3 className="mt-4 font-bold text-lg">Get Real Guidance</h3>
+                <p className="text-muted-foreground mt-1">
+                  Chat or call your mentor and clear all doubts.
+                </p>
               </div>
             </div>
-          ))}
-        </div>
-        <div className="flex justify-center mt-6 gap-1">
-          <button className="h-2 w-2 rounded-full bg-primary"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
+          </div>
+
+          {/* Top Rated Mentors */}
+          <div>
+            <div className="flex items-center justify-between mb-8">
+              <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
+                Top rated Mentors
+              </h2>
+              <Button asChild variant="outline" className="rounded-full gap-2">
+                <a href="/find-a-mentor">
+                  All Mentors <ChevronRight className="h-4 w-4" />
+                </a>
+              </Button>
+            </div>
+            <div className="grid gap-6">
+              {mentors.map((m) => (
+                <div
+                  key={m.name}
+                  className="rounded-2xl border overflow-hidden bg-white"
+                >
+                  <img
+                    src={m.img}
+                    alt={m.name}
+                    className="h-48 w-full object-cover bg-slate-200"
+                  />
+                  <div className="p-5">
+                    <h3 className="font-semibold text-lg">{m.name}</h3>
+                    <p className="text-muted-foreground text-sm">
+                      {m.airline} • {m.years}+ yrs
+                    </p>
+                    <Button asChild className="mt-4 w-full rounded-full">
+                      <a href="/find-a-mentor">View Profile</a>
+                    </Button>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-center mt-6 gap-1">
+              <button className="h-2 w-2 rounded-full bg-primary"></button>
+              <button className="h-2 w-2 rounded-full bg-slate-300"></button>
+              <button className="h-2 w-2 rounded-full bg-slate-300"></button>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -173,7 +173,7 @@ export default function Index() {
                 career path.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <Button asChild className="rounded-full h-10 pl-4 pr-6 text-base flex items-center gap-2">
+                <Button asChild className="rounded-full h-10 pl-3 pr-6 text-base flex items-center gap-2">
                   <a href="/find-a-mentor">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
@@ -186,7 +186,7 @@ export default function Index() {
                 <Button
                   asChild
                   variant="outline"
-                  className="rounded-full h-10 pl-4 pr-6 text-base bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] hover:bg-white/90 flex items-center gap-2"
+                  className="rounded-full h-10 pl-3 pr-6 text-base bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] hover:bg-white/90 flex items-center gap-2"
                 >
                   <a href="/find-a-mentor">
                     <img

@@ -128,7 +128,10 @@ export default function Index() {
               </div>
             </div>
             <div className="mt-3 flex gap-2">
-              <Button asChild className="h-9 pl-1 pr-4 rounded-full text-sm flex items-center gap-2">
+              <Button
+                asChild
+                className="h-9 pl-1 pr-4 rounded-full text-sm flex items-center gap-2"
+              >
                 <a href="/find-a-mentor">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
@@ -173,7 +176,10 @@ export default function Index() {
                 career path.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <Button asChild className="rounded-full h-10 pl-2 pr-6 text-base flex items-center gap-2">
+                <Button
+                  asChild
+                  className="rounded-full h-10 pl-2 pr-6 text-base flex items-center gap-2"
+                >
                   <a href="/find-a-mentor">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
@@ -358,12 +364,12 @@ export default function Index() {
                   />
                   <div className="p-3">
                     <h3 className="font-semibold text-sm">{m.name}</h3>
-                    <p className="text-muted-foreground text-xs">
-                      {m.airline}
-                    </p>
+                    <p className="text-muted-foreground text-xs">{m.airline}</p>
                     <div className="flex items-center gap-1 mt-1 mb-2">
                       <span className="text-orange-400 text-xs">★</span>
-                      <span className="text-xs font-medium">4.8(101) | {m.years}+yrs</span>
+                      <span className="text-xs font-medium">
+                        4.8(101) | {m.years}+yrs
+                      </span>
                     </div>
                     <div className="flex gap-1 flex-wrap mb-2">
                       <span className="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded">

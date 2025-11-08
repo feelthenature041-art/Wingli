@@ -220,37 +220,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* The 3Ws of Wingli */}
-      <section className="container py-10 md:py-14">
-        <h2 className="text-left text-2xl md:text-3xl font-extrabold tracking-tight">
-          The 3Ws of Wingli
-        </h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
-          <div className="rounded-xl bg-[#1b3d5a] text-white p-6">
-            <h3 className="font-bold text-lg">WHY - Why Wingli?</h3>
-            <p className="text-white/80 mt-2">
-              To make real guidance accessible for every aspiring cabin crew
-              member. Get answers directly from those who've been there.
-            </p>
-          </div>
-          <div className="rounded-xl bg-[#1b3d5a] text-white p-6">
-            <h3 className="font-bold text-lg">WHO - Who can connect?</h3>
-            <p className="text-white/80 mt-2">
-              Anyone aspiring to join the aviation industry. Connect with real
-              mentors who are real right answer to your questions.
-            </p>
-          </div>
-          <div className="rounded-xl bg-[#1b3d5a] text-white p-6">
-            <h3 className="font-bold text-lg">WHAT - What happens here?</h3>
-            <p className="text-white/80 mt-2">
-              You can chat, call, or get trained by experienced mentors in areas
-              like interview prep, grooming, flight experience and career
-              growth.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Ask any topic with */}
       <section className="container py-10 md:py-14">
         <h2 className="text-left text-2xl md:text-3xl font-extrabold tracking-tight">

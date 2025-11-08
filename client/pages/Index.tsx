@@ -296,34 +296,45 @@ export default function Index() {
             <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
               How Wingli Works
             </h2>
-            <div className="mt-8 grid gap-6">
-              <div className="rounded-2xl border p-6 bg-white/70">
-                <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center font-bold">
-                  1
+            <div className="mt-8 space-y-0">
+              {[
+                {
+                  num: 1,
+                  title: "Choose Your Mentor",
+                  desc: "Browse real air hostesses from top airlines.",
+                },
+                {
+                  num: 2,
+                  title: "Book a Session",
+                  desc: "Pick interview prep, grooming, or training topics.",
+                },
+                {
+                  num: 3,
+                  title: "Get Real Guidance",
+                  desc: "Chat or call your mentor and clear all doubts.",
+                },
+              ].map((step, idx) => (
+                <div key={step.num}>
+                  <div className="rounded-2xl border border-slate-200 p-6 bg-white relative z-10">
+                    <div className="flex gap-4">
+                      <div className="h-14 w-14 rounded-full bg-primary text-white grid place-items-center font-bold text-xl flex-shrink-0">
+                        {step.num}
+                      </div>
+                      <div className="pt-1">
+                        <h3 className="font-bold text-lg">{step.title}</h3>
+                        <p className="text-muted-foreground text-sm mt-1">
+                          {step.desc}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  {idx < 2 && (
+                    <div className="flex justify-start ml-6 py-0">
+                      <div className="w-1 h-6 bg-slate-300"></div>
+                    </div>
+                  )}
                 </div>
-                <h3 className="mt-4 font-bold text-lg">Choose Your Mentor</h3>
-                <p className="text-muted-foreground mt-1">
-                  Browse real air hostesses from top airlines.
-                </p>
-              </div>
-              <div className="rounded-2xl border p-6 bg-white/70">
-                <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center font-bold">
-                  2
-                </div>
-                <h3 className="mt-4 font-bold text-lg">Book a Session</h3>
-                <p className="text-muted-foreground mt-1">
-                  Pick interview prep, grooming, or training topics.
-                </p>
-              </div>
-              <div className="rounded-2xl border p-6 bg-white/70">
-                <div className="h-12 w-12 rounded-full bg-primary/10 text-primary grid place-items-center font-bold">
-                  3
-                </div>
-                <h3 className="mt-4 font-bold text-lg">Get Real Guidance</h3>
-                <p className="text-muted-foreground mt-1">
-                  Chat or call your mentor and clear all doubts.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -339,23 +350,35 @@ export default function Index() {
                 </a>
               </Button>
             </div>
-            <div className="grid gap-6">
+            <div className="grid grid-cols-3 gap-4">
               {mentors.map((m) => (
                 <div
                   key={m.name}
-                  className="rounded-2xl border overflow-hidden bg-white"
+                  className="rounded-xl border border-slate-200 overflow-hidden bg-white"
                 >
                   <img
                     src={m.img}
                     alt={m.name}
-                    className="h-48 w-full object-cover bg-slate-200"
+                    className="h-40 w-full object-cover bg-slate-200"
                   />
-                  <div className="p-5">
-                    <h3 className="font-semibold text-lg">{m.name}</h3>
-                    <p className="text-muted-foreground text-sm">
-                      {m.airline} • {m.years}+ yrs
+                  <div className="p-4">
+                    <h3 className="font-semibold text-base">{m.name}</h3>
+                    <p className="text-muted-foreground text-xs">
+                      {m.airline}
                     </p>
-                    <Button asChild className="mt-4 w-full rounded-full">
+                    <div className="flex items-center gap-1 mt-2 mb-3">
+                      <span className="text-orange-400">★</span>
+                      <span className="text-xs font-medium">4.8(101) | {m.years}+yrs</span>
+                    </div>
+                    <div className="flex gap-2 flex-wrap mb-3">
+                      <span className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">
+                        Interview Prep
+                      </span>
+                      <span className="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">
+                        Airline Specific Tips
+                      </span>
+                    </div>
+                    <Button asChild className="w-full rounded-full h-8 text-xs">
                       <a href="/find-a-mentor">View Profile</a>
                     </Button>
                   </div>

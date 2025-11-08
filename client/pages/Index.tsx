@@ -178,7 +178,7 @@ export default function Index() {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
                       alt=""
-                      className="h-4 w-4"
+                      className="h-5 w-5"
                     />
                     Chat with Mentor
                   </a>
@@ -192,7 +192,7 @@ export default function Index() {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F953c6c3b574b4362ade62411724fab94?format=webp&width=100"
                       alt=""
-                      className="h-4 w-4"
+                      className="h-5 w-5"
                     />
                     Talk to Mentor
                   </a>

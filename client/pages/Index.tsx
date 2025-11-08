@@ -128,15 +128,29 @@ export default function Index() {
               </div>
             </div>
             <div className="mt-3 flex gap-2">
-              <Button asChild className="h-9 px-4 rounded-full text-sm">
-                <a href="/find-a-mentor">Chat with Mentor</a>
+              <Button asChild className="h-9 px-4 rounded-full text-sm flex items-center gap-2">
+                <a href="/find-a-mentor">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
+                    alt=""
+                    className="h-4 w-4"
+                  />
+                  Chat with Mentor
+                </a>
               </Button>
               <Button
                 asChild
                 variant="outline"
-                className="h-9 px-4 rounded-full text-sm bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a]"
+                className="h-9 px-4 rounded-full text-sm bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] flex items-center gap-2"
               >
-                <a href="/find-a-mentor">Talk to Mentor</a>
+                <a href="/find-a-mentor">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F953c6c3b574b4362ade62411724fab94?format=webp&width=100"
+                    alt=""
+                    className="h-4 w-4"
+                  />
+                  Talk to Mentor
+                </a>
               </Button>
             </div>
           </div>

@@ -361,50 +361,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Blogs */}
-      <section className="container py-10 md:py-14">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-            Blogs
-          </h2>
-          <Button asChild variant="outline" className="rounded-full gap-2">
-            <a href="/blog">
-              View all Blogs <ChevronRight className="h-4 w-4" />
-            </a>
-          </Button>
-        </div>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.map((post, i) => (
-            <div
-              key={i}
-              className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition"
-            >
-              <img
-                src={post.img}
-                alt={post.title}
-                className="h-48 w-full object-cover bg-slate-200"
-              />
-              <div className="p-5">
-                <h3 className="font-semibold text-lg line-clamp-2">
-                  {post.title}
-                </h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  {post.date}
-                </p>
-                <Button asChild variant="outline" className="mt-4 rounded-full">
-                  <a href="/blog">Read More</a>
-                </Button>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-center mt-6 gap-1">
-          <button className="h-2 w-2 rounded-full bg-primary"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
-        </div>
-      </section>
-
       {/* Video Lessons */}
       <section className="container py-10 md:py-14">
         <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
@@ -442,6 +398,50 @@ export default function Index() {
                 <p className="text-muted-foreground text-sm mt-2">
                   {lesson.instructor}
                 </p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-center mt-6 gap-1">
+          <button className="h-2 w-2 rounded-full bg-primary"></button>
+          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
+          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
+        </div>
+      </section>
+
+      {/* Blogs */}
+      <section className="container py-10 md:py-14">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
+            Blogs
+          </h2>
+          <Button asChild variant="outline" className="rounded-full gap-2">
+            <a href="/blog">
+              View all Blogs <ChevronRight className="h-4 w-4" />
+            </a>
+          </Button>
+        </div>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {blogPosts.map((post, i) => (
+            <div
+              key={i}
+              className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition"
+            >
+              <img
+                src={post.img}
+                alt={post.title}
+                className="h-48 w-full object-cover bg-slate-200"
+              />
+              <div className="p-5">
+                <h3 className="font-semibold text-lg line-clamp-2">
+                  {post.title}
+                </h3>
+                <p className="text-muted-foreground text-sm mt-2">
+                  {post.date}
+                </p>
+                <Button asChild variant="outline" className="mt-4 rounded-full">
+                  <a href="/blog">Read More</a>
+                </Button>
               </div>
             </div>
           ))}

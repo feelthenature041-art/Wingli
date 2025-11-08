@@ -79,21 +79,33 @@ export default function Footer() {
           <div className="space-y-3">
             <p className="text-white/80 text-sm">Follow Us</p>
             <div className="flex items-center gap-4">
-              <a href="#" aria-label="Instagram" className="hover:opacity-70 transition">
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="hover:opacity-70 transition"
+              >
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F01a5dbfcdbad470095658414e2902318?format=webp&width=64"
                   alt="Instagram"
                   className="h-5 w-5"
                 />
               </a>
-              <a href="#" aria-label="YouTube" className="hover:opacity-70 transition">
+              <a
+                href="#"
+                aria-label="YouTube"
+                className="hover:opacity-70 transition"
+              >
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fa7bf0e95c9ba44029a6ad5a17e97b936?format=webp&width=64"
                   alt="YouTube"
                   className="h-5 w-5"
                 />
               </a>
-              <a href="#" aria-label="Facebook" className="hover:opacity-70 transition">
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="hover:opacity-70 transition"
+              >
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Fb23ca1f889eb408c82fdeaf9a3980845?format=webp&width=64"
                   alt="Facebook"

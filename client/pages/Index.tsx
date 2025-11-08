@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Search, Calendar, MessageSquare, Quote, ChevronRight } from "lucide-react";
+import {
+  Search,
+  Calendar,
+  MessageSquare,
+  Quote,
+  ChevronRight,
+} from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -238,7 +244,8 @@ export default function Index() {
             <h3 className="font-bold text-lg">WHAT - What happens here?</h3>
             <p className="text-white/80 mt-2">
               You can chat, call, or get trained by experienced mentors in areas
-              like interview prep, grooming, flight experience and career growth.
+              like interview prep, grooming, flight experience and career
+              growth.
             </p>
           </div>
         </div>
@@ -251,9 +258,18 @@ export default function Index() {
         </h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-3">
           {[
-            { title: "Topic 1", desc: "Ask anything related to Topic 1. Analysis, mentorship, highly recommended!" },
-            { title: "Topic 1", desc: "Ask anything related to Topic 1. Analysis, mentorship, highly recommended!" },
-            { title: "Topic 1", desc: "Ask anything related to Topic 1. Analysis, mentorship, highly recommended!" },
+            {
+              title: "Topic 1",
+              desc: "Ask anything related to Topic 1. Analysis, mentorship, highly recommended!",
+            },
+            {
+              title: "Topic 1",
+              desc: "Ask anything related to Topic 1. Analysis, mentorship, highly recommended!",
+            },
+            {
+              title: "Topic 1",
+              desc: "Ask anything related to Topic 1. Analysis, mentorship, highly recommended!",
+            },
           ].map((topic, i) => (
             <div
               key={i}
@@ -315,7 +331,9 @@ export default function Index() {
             Top rated Mentors
           </h2>
           <Button asChild variant="outline" className="rounded-full gap-2">
-            <a href="/find-a-mentor">All Mentors <ChevronRight className="h-4 w-4" /></a>
+            <a href="/find-a-mentor">
+              All Mentors <ChevronRight className="h-4 w-4" />
+            </a>
           </Button>
         </div>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -355,7 +373,9 @@ export default function Index() {
             Blogs
           </h2>
           <Button asChild variant="outline" className="rounded-full gap-2">
-            <a href="/blog">View all Blogs <ChevronRight className="h-4 w-4" /></a>
+            <a href="/blog">
+              View all Blogs <ChevronRight className="h-4 w-4" />
+            </a>
           </Button>
         </div>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -409,7 +429,14 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                   <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center">
-                    <div className="w-0 h-0 border-l-6 border-l-transparent border-r-0 border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1" style={{borderLeft: '8px solid white', borderTop: '5px solid transparent', borderBottom: '5px solid transparent'}}></div>
+                    <div
+                      className="w-0 h-0 border-l-6 border-l-transparent border-r-0 border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1"
+                      style={{
+                        borderLeft: "8px solid white",
+                        borderTop: "5px solid transparent",
+                        borderBottom: "5px solid transparent",
+                      }}
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -439,7 +466,10 @@ export default function Index() {
               About Wingli
             </h2>
             <p className="mt-4 text-slate-600 leading-relaxed">
-              Wingli is an online platform that helps aspiring air hostesses connect with real mentors from the aviation industry. We believe that personalized guidance and mentorship are crucial for success in this competitive field.
+              Wingli is an online platform that helps aspiring air hostesses
+              connect with real mentors from the aviation industry. We believe
+              that personalized guidance and mentorship are crucial for success
+              in this competitive field.
             </p>
           </div>
           <div>

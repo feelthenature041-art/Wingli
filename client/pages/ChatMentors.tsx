@@ -140,38 +140,40 @@ export default function ChatMentors() {
         </p>
 
         {/* Search and Filter Bar */}
-        <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-          <div className="flex-1 relative w-full sm:w-auto">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-400" />
-            <input
-              type="text"
-              placeholder="Search by name"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 rounded-full border border-slate-200 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-            />
+        <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
+          <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+            <div className="relative w-48">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-400" />
+              <input
+                type="text"
+                placeholder="Search by name"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-10 pr-4 py-2 rounded-full border border-slate-200 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
+              />
+            </div>
+
+            <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-sm font-medium text-foreground">
+              <Filter className="h-4 w-4" />
+              Filter
+            </button>
+
+            <button
+              onClick={() =>
+                setSortBy(
+                  sortBy === "rating"
+                    ? "price"
+                    : sortBy === "price"
+                      ? "experience"
+                      : "rating"
+                )
+              }
+              className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-sm font-medium text-foreground"
+            >
+              <ArrowUpDown className="h-4 w-4" />
+              Sort
+            </button>
           </div>
-
-          <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-sm font-medium text-foreground">
-            <Filter className="h-4 w-4" />
-            Filter
-          </button>
-
-          <button
-            onClick={() =>
-              setSortBy(
-                sortBy === "rating"
-                  ? "price"
-                  : sortBy === "price"
-                    ? "experience"
-                    : "rating"
-              )
-            }
-            className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-sm font-medium text-foreground"
-          >
-            <ArrowUpDown className="h-4 w-4" />
-            Sort
-          </button>
 
           <div className="flex items-center gap-2 text-sm">
             <a href="/chat-mentors" className="font-semibold text-slate-900">

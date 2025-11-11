@@ -173,14 +173,14 @@ export default function MentorsList() {
       </div>
 
       {/* Mentors Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredAndSortedMentors.map((mentor) => (
           <div
             key={mentor.id}
             className="rounded-lg border border-slate-200 bg-white overflow-hidden hover:shadow-md transition-shadow"
           >
             {/* Mentor Image */}
-            <div className="aspect-square overflow-hidden bg-slate-100">
+            <div className="aspect-video overflow-hidden bg-slate-100">
               <img
                 src={mentor.img}
                 alt={mentor.name}
@@ -189,7 +189,7 @@ export default function MentorsList() {
             </div>
 
             {/* Mentor Info */}
-            <div className="p-4">
+            <div className="p-3">
               <h3 className="text-lg font-semibold text-foreground">
                 {mentor.name}
               </h3>

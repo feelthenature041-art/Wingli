@@ -130,24 +130,6 @@ export default function ChatMentors() {
 
   return (
     <section className="container py-8 md:py-12">
-      {/* Toggle Button */}
-      <div className="mb-8 flex items-center gap-2">
-        <div className="flex rounded-full border border-slate-200 bg-slate-50 p-1">
-          <a
-            href="/chat-mentors"
-            className="px-4 py-2 rounded-full bg-slate-900 text-white text-sm font-medium transition-colors"
-          >
-            Chat Now
-          </a>
-          <a
-            href="/call-mentors"
-            className="px-4 py-2 rounded-full text-slate-700 text-sm font-medium hover:text-slate-900 transition-colors"
-          >
-            Call Now
-          </a>
-        </div>
-      </div>
-
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-2">
@@ -190,6 +172,16 @@ export default function ChatMentors() {
             <ArrowUpDown className="h-4 w-4" />
             Sort
           </button>
+
+          <div className="flex items-center gap-2 text-sm">
+            <a href="/chat-mentors" className="font-semibold text-slate-900">
+              Chat
+            </a>
+            <span className="text-slate-400">|</span>
+            <a href="/call-mentors" className="text-slate-600 hover:text-slate-900">
+              Call
+            </a>
+          </div>
         </div>
       </div>
 

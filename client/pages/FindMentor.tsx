@@ -21,7 +21,7 @@ export default function FindMentor() {
                 asChild
                 className="h-10 pl-2 pr-6 rounded-full text-base flex items-center gap-2 mb-4"
               >
-                <a href="#chat">
+                <a href="/mentors">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
                     alt=""
@@ -42,7 +42,7 @@ export default function FindMentor() {
                 variant="outline"
                 className="h-10 pl-2 pr-6 rounded-full text-base bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] hover:bg-white/90 flex items-center gap-2 mb-4"
               >
-                <a href="#call">
+                <a href="/mentors">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F953c6c3b574b4362ade62411724fab94?format=webp&width=100"
                     alt=""

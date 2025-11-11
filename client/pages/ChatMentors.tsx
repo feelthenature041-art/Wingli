@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Search, Filter, ArrowUpDown } from "lucide-react";
 
@@ -176,18 +177,18 @@ export default function ChatMentors() {
           </div>
 
           <div className="flex items-center gap-1 rounded-full bg-primary/10 border border-primary/20 p-1">
-            <a
-              href="/chat-mentors"
+            <Link
+              to="/chat-mentors"
               className="px-4 py-2 rounded-full font-semibold text-white bg-primary hover:bg-primary/90 transition-colors text-sm"
             >
               Chat
-            </a>
-            <a
-              href="/call-mentors"
+            </Link>
+            <Link
+              to="/call-mentors"
               className="px-4 py-2 rounded-full text-primary hover:bg-primary/5 transition-colors text-sm font-semibold"
             >
               Call
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -190,13 +190,13 @@ export default function MentorsList() {
 
             {/* Mentor Info */}
             <div className="p-3">
-              <h3 className="text-lg font-semibold text-foreground">
+              <h3 className="text-base font-semibold text-foreground">
                 {mentor.name}
               </h3>
-              <p className="text-sm text-slate-600 mb-3">{mentor.title}</p>
+              <p className="text-xs text-slate-600 mb-2">{mentor.title}</p>
 
               {/* Rating and Experience */}
-              <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
+              <div className="flex items-center gap-2 text-xs text-slate-600 mb-2">
                 <span className="font-medium">
                   ⭐{mentor.rating}({mentor.reviews})
                 </span>
@@ -205,43 +205,48 @@ export default function MentorsList() {
               </div>
 
               {/* Languages */}
-              <div className="flex flex-wrap gap-2 mb-4">
-                {mentor.languages.map((lang) => (
+              <div className="flex flex-wrap gap-1 mb-3">
+                {mentor.languages.slice(0, 2).map((lang) => (
                   <span
                     key={lang}
-                    className="px-2 py-1 rounded-full bg-slate-100 text-xs font-medium text-slate-700"
+                    className="px-2 py-0.5 rounded-full bg-slate-100 text-xs font-medium text-slate-700"
                   >
                     {lang}
                   </span>
                 ))}
+                {mentor.languages.length > 2 && (
+                  <span className="px-2 py-0.5 rounded-full bg-slate-100 text-xs font-medium text-slate-700">
+                    +{mentor.languages.length - 2}
+                  </span>
+                )}
               </div>
 
               {/* Price */}
-              <p className="text-sm font-semibold text-foreground mb-4">
+              <p className="text-xs font-semibold text-foreground mb-3">
                 ₹{mentor.price}/Min
               </p>
 
               {/* Action Buttons */}
-              <div className="flex gap-3">
+              <div className="flex gap-2">
                 <Button
                   asChild
-                  className="flex-1 h-9 rounded-full bg-slate-900 hover:bg-slate-800 flex items-center justify-center gap-2"
+                  className="flex-1 h-8 rounded-full bg-slate-900 hover:bg-slate-800 flex items-center justify-center gap-1"
                 >
                   <a
                     href="#"
-                    className="flex items-center justify-center gap-2"
+                    className="flex items-center justify-center gap-1"
                   >
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
                       alt=""
-                      className="h-5 w-5"
+                      className="h-4 w-4"
                     />
-                    <span className="text-sm font-medium">Chat Now</span>
+                    <span className="text-xs font-medium">Chat Now</span>
                   </a>
                 </Button>
                 <Button
                   variant="outline"
-                  className="flex-1 h-9 rounded-full border border-slate-300 hover:bg-slate-50 text-sm font-medium"
+                  className="flex-1 h-8 rounded-full border border-slate-300 hover:bg-slate-50 text-xs font-medium"
                 >
                   View Profile
                 </Button>

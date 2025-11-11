@@ -113,7 +113,7 @@ export default function MentorsList() {
 
     if (searchQuery.trim()) {
       filtered = filtered.filter((mentor) =>
-        mentor.name.toLowerCase().includes(searchQuery.toLowerCase())
+        mentor.name.toLowerCase().includes(searchQuery.toLowerCase()),
       );
     }
 
@@ -161,7 +161,7 @@ export default function MentorsList() {
                   ? "price"
                   : sortBy === "price"
                     ? "experience"
-                    : "rating"
+                    : "rating",
               )
             }
             className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-sm font-medium text-foreground"
@@ -227,7 +227,10 @@ export default function MentorsList() {
                   asChild
                   className="flex-1 h-9 rounded-full bg-slate-900 hover:bg-slate-800 flex items-center justify-center gap-2"
                 >
-                  <a href="#" className="flex items-center justify-center gap-2">
+                  <a
+                    href="#"
+                    className="flex items-center justify-center gap-2"
+                  >
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
                       alt=""

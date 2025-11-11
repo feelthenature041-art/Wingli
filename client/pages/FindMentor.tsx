@@ -10,7 +10,8 @@ export default function FindMentor() {
             Connect with Expert Mentors
           </h1>
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mb-8">
-            Get personalized guidance from experienced flight attendants. Choose the best way to connect with your mentor.
+            Get personalized guidance from experienced flight attendants. Choose
+            the best way to connect with your mentor.
           </p>
 
           {/* CTA Section */}
@@ -31,7 +32,9 @@ export default function FindMentor() {
                 </a>
               </Button>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Connect instantly with a mentor for quick questions and real-time guidance. Perfect for immediate advice on interviews, career tips, and industry insights.
+                Connect instantly with a mentor for quick questions and
+                real-time guidance. Perfect for immediate advice on interviews,
+                career tips, and industry insights.
               </p>
             </div>
 
@@ -52,7 +55,9 @@ export default function FindMentor() {
                 </a>
               </Button>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Schedule a one-on-one call for in-depth discussions. Ideal for comprehensive career planning, mock interviews, and personalized feedback on your journey.
+                Schedule a one-on-one call for in-depth discussions. Ideal for
+                comprehensive career planning, mock interviews, and personalized
+                feedback on your journey.
               </p>
             </div>
           </div>
@@ -67,19 +72,27 @@ export default function FindMentor() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 rounded-lg border bg-slate-50">
-              <h3 className="font-semibold text-lg mb-2">Experienced Professionals</h3>
+              <h3 className="font-semibold text-lg mb-2">
+                Experienced Professionals
+              </h3>
               <p className="text-sm text-slate-600">
-                Learn from mentors with years of experience in top airlines worldwide.
+                Learn from mentors with years of experience in top airlines
+                worldwide.
               </p>
             </div>
             <div className="p-6 rounded-lg border bg-slate-50">
-              <h3 className="font-semibold text-lg mb-2">Personalized Guidance</h3>
+              <h3 className="font-semibold text-lg mb-2">
+                Personalized Guidance
+              </h3>
               <p className="text-sm text-slate-600">
-                Get advice tailored to your goals, experience, and career aspirations.
+                Get advice tailored to your goals, experience, and career
+                aspirations.
               </p>
             </div>
             <div className="p-6 rounded-lg border bg-slate-50">
-              <h3 className="font-semibold text-lg mb-2">Flexible Scheduling</h3>
+              <h3 className="font-semibold text-lg mb-2">
+                Flexible Scheduling
+              </h3>
               <p className="text-sm text-slate-600">
                 Choose chat or call based on your availability and preference.
               </p>

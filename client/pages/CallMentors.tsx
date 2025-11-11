@@ -114,7 +114,7 @@ export default function CallMentors() {
 
     if (searchQuery.trim()) {
       filtered = filtered.filter((mentor) =>
-        mentor.name.toLowerCase().includes(searchQuery.toLowerCase())
+        mentor.name.toLowerCase().includes(searchQuery.toLowerCase()),
       );
     }
 
@@ -137,7 +137,8 @@ export default function CallMentors() {
           Call with Mentors
         </h1>
         <p className="text-muted-foreground mb-6">
-          Schedule a one-on-one call for in-depth guidance and personalized feedback
+          Schedule a one-on-one call for in-depth guidance and personalized
+          feedback
         </p>
 
         {/* Search and Filter Bar */}
@@ -166,7 +167,7 @@ export default function CallMentors() {
                     ? "price"
                     : sortBy === "price"
                       ? "experience"
-                      : "rating"
+                      : "rating",
                 )
               }
               className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-sm font-medium text-foreground"

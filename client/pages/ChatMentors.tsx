@@ -114,7 +114,7 @@ export default function ChatMentors() {
 
     if (searchQuery.trim()) {
       filtered = filtered.filter((mentor) =>
-        mentor.name.toLowerCase().includes(searchQuery.toLowerCase())
+        mentor.name.toLowerCase().includes(searchQuery.toLowerCase()),
       );
     }
 
@@ -166,7 +166,7 @@ export default function ChatMentors() {
                     ? "price"
                     : sortBy === "price"
                       ? "experience"
-                      : "rating"
+                      : "rating",
                 )
               }
               className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-sm font-medium text-foreground"

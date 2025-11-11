@@ -198,7 +198,7 @@ export default function CallMentors() {
         {filteredAndSortedMentors.map((mentor) => (
           <div
             key={mentor.id}
-            className="rounded-lg border border-slate-200 bg-white overflow-hidden hover:shadow-md transition-shadow"
+            className="rounded-lg border border-slate-200 bg-white overflow-hidden hover:shadow-md transition-shadow max-w-sm"
           >
             {/* Mentor Image */}
             <div className="aspect-video overflow-hidden bg-slate-100">
@@ -250,14 +250,13 @@ export default function CallMentors() {
               {/* Action Button - Call Now Only */}
               <Button
                 asChild
-                variant="outline"
-                className="w-full h-8 rounded-full border-[#1b3d5a]/30 text-[#1b3d5a] hover:bg-slate-50 flex items-center justify-center gap-1"
+                className="w-full h-9 rounded-full bg-primary hover:bg-primary/90 text-white flex items-center justify-center gap-2"
               >
-                <a href="#" className="flex items-center justify-center gap-1">
+                <a href="#" className="flex items-center justify-center gap-2">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F953c6c3b574b4362ade62411724fab94?format=webp&width=100"
                     alt=""
-                    className="h-4 w-4"
+                    className="h-4 w-4 brightness-0 invert"
                   />
                   <span className="text-xs font-medium">Call Now</span>
                 </a>

@@ -175,12 +175,17 @@ export default function CallMentors() {
             </button>
           </div>
 
-          <div className="flex items-center gap-2 text-sm">
-            <a href="/chat-mentors" className="text-slate-600 hover:text-slate-900">
+          <div className="flex items-center gap-1 rounded-full bg-primary/10 border border-primary/20 p-1">
+            <a
+              href="/chat-mentors"
+              className="px-4 py-2 rounded-full text-primary hover:bg-primary/5 transition-colors text-sm font-semibold"
+            >
               Chat
             </a>
-            <span className="text-slate-400">|</span>
-            <a href="/call-mentors" className="font-semibold text-slate-900">
+            <a
+              href="/call-mentors"
+              className="px-4 py-2 rounded-full font-semibold text-white bg-primary hover:bg-primary/90 transition-colors text-sm"
+            >
               Call
             </a>
           </div>

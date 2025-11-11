@@ -198,7 +198,7 @@ export default function ChatMentors() {
         {filteredAndSortedMentors.map((mentor) => (
           <div
             key={mentor.id}
-            className="rounded-lg border border-slate-200 bg-white overflow-hidden hover:shadow-md transition-shadow"
+            className="rounded-lg border border-slate-200 bg-white overflow-hidden hover:shadow-md transition-shadow max-w-sm"
           >
             {/* Mentor Image */}
             <div className="aspect-video overflow-hidden bg-slate-100">
@@ -250,13 +250,13 @@ export default function ChatMentors() {
               {/* Action Button - Chat Now Only */}
               <Button
                 asChild
-                className="w-full h-8 rounded-full bg-slate-900 hover:bg-slate-800 flex items-center justify-center gap-1"
+                className="w-full h-9 rounded-full bg-primary hover:bg-primary/90 text-white flex items-center justify-center gap-2"
               >
-                <a href="#" className="flex items-center justify-center gap-1">
+                <a href="#" className="flex items-center justify-center gap-2">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
                     alt=""
-                    className="h-4 w-4"
+                    className="h-4 w-4 brightness-0 invert"
                   />
                   <span className="text-xs font-medium">Chat Now</span>
                 </a>

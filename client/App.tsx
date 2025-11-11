@@ -14,6 +14,8 @@ import HowItWorks from "@/pages/HowItWorks";
 import Blog from "@/pages/Blog";
 import FindMentor from "@/pages/FindMentor";
 import MentorsList from "@/pages/MentorsList";
+import ChatMentors from "@/pages/ChatMentors";
+import CallMentors from "@/pages/CallMentors";
 import Login from "@/pages/Login";
 
 const queryClient = new QueryClient();
@@ -32,6 +34,8 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/find-a-mentor" element={<FindMentor />} />
             <Route path="/mentors" element={<MentorsList />} />
+            <Route path="/chat-mentors" element={<ChatMentors />} />
+            <Route path="/call-mentors" element={<CallMentors />} />
             <Route path="/login" element={<Login />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -69,9 +69,9 @@ export default function HowItWorks() {
             How It Works
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed">
-            Get expert mentorship from experienced aviation professionals in just
-            a few simple steps. Connect with mentors who have been through the
-            journey and can guide you to success.
+            Get expert mentorship from experienced aviation professionals in
+            just a few simple steps. Connect with mentors who have been through
+            the journey and can guide you to success.
           </p>
         </div>
 
@@ -109,7 +109,10 @@ export default function HowItWorks() {
                 {/* Details List */}
                 <ul className="space-y-2">
                   {step.details.map((detail, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-slate-600">
+                    <li
+                      key={idx}
+                      className="flex items-start gap-2 text-sm text-slate-600"
+                    >
                       <span className="text-primary font-bold mt-0.5">•</span>
                       <span>{detail}</span>
                     </li>
@@ -143,8 +146,8 @@ export default function HowItWorks() {
                 Expert Mentors
               </h3>
               <p className="text-slate-600">
-                Learn from senior cabin crew members with years of experience
-                at premium airlines worldwide.
+                Learn from senior cabin crew members with years of experience at
+                premium airlines worldwide.
               </p>
             </div>
 
@@ -183,9 +186,10 @@ export default function HowItWorks() {
               How do I get started?
             </h3>
             <p className="text-slate-600">
-              Simply visit our "Find a Mentor" page, browse through the available
-              mentors, click "View Profile" to see their complete details, and then
-              choose to either chat or call them based on your preference.
+              Simply visit our "Find a Mentor" page, browse through the
+              available mentors, click "View Profile" to see their complete
+              details, and then choose to either chat or call them based on your
+              preference.
             </p>
           </div>
 
@@ -194,10 +198,10 @@ export default function HowItWorks() {
               What's the difference between Chat and Call?
             </h3>
             <p className="text-slate-600">
-              Chat is ideal for quick questions and text-based guidance, while Call
-              sessions provide more personalized, in-depth one-on-one mentorship
-              through voice communication. Both are charged at the mentor's per-minute
-              rate.
+              Chat is ideal for quick questions and text-based guidance, while
+              Call sessions provide more personalized, in-depth one-on-one
+              mentorship through voice communication. Both are charged at the
+              mentor's per-minute rate.
             </p>
           </div>
 
@@ -206,9 +210,9 @@ export default function HowItWorks() {
               How do mentors charge their fees?
             </h3>
             <p className="text-slate-600">
-              Each mentor sets their own per-minute rate, which is clearly displayed
-              on their profile. You only pay for the time you actually use during
-              your session.
+              Each mentor sets their own per-minute rate, which is clearly
+              displayed on their profile. You only pay for the time you actually
+              use during your session.
             </p>
           </div>
 
@@ -218,8 +222,8 @@ export default function HowItWorks() {
             </h3>
             <p className="text-slate-600">
               Absolutely! You can connect with multiple mentors to get different
-              perspectives and guidance. Browse profiles, read reviews, and find the
-              mentors who best suit your learning needs.
+              perspectives and guidance. Browse profiles, read reviews, and find
+              the mentors who best suit your learning needs.
             </p>
           </div>
 
@@ -229,8 +233,8 @@ export default function HowItWorks() {
             </h3>
             <p className="text-slate-600">
               Use our advanced filtering options to search by airline, country,
-              language, expertise area, years of experience, and more. This helps
-              you find the perfect mentor match for your specific goals.
+              language, expertise area, years of experience, and more. This
+              helps you find the perfect mentor match for your specific goals.
             </p>
           </div>
 
@@ -239,9 +243,9 @@ export default function HowItWorks() {
               What if I need help preparing for a specific airline?
             </h3>
             <p className="text-slate-600">
-              Many of our mentors specialize in specific airlines. Use the skills
-              filter to find mentors experienced with the airline you're targeting,
-              and check their reviews for success stories.
+              Many of our mentors specialize in specific airlines. Use the
+              skills filter to find mentors experienced with the airline you're
+              targeting, and check their reviews for success stories.
             </p>
           </div>
         </div>

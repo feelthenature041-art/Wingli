@@ -49,20 +49,24 @@ export default function MentorProfile() {
             {/* Rating and Experience */}
             <div className="flex items-center gap-4 text-sm text-slate-600 mb-6">
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-lg">
-                  ⭐{mentor.rating}
+                <span className="font-semibold text-lg">⭐{mentor.rating}</span>
+                <span className="text-slate-600">
+                  ({mentor.reviews} reviews)
                 </span>
-                <span className="text-slate-600">({mentor.reviews} reviews)</span>
               </div>
               <span>•</span>
-              <span className="font-medium">{mentor.years} years experience</span>
+              <span className="font-medium">
+                {mentor.years} years experience
+              </span>
               <span>•</span>
               <span className="font-medium">{mentor.country}</span>
             </div>
 
             {/* Languages */}
             <div className="mb-6">
-              <p className="text-sm font-semibold text-foreground mb-2">Languages</p>
+              <p className="text-sm font-semibold text-foreground mb-2">
+                Languages
+              </p>
               <div className="flex flex-wrap gap-2">
                 {mentor.languages.map((lang) => (
                   <span
@@ -77,7 +81,9 @@ export default function MentorProfile() {
 
             {/* Skills */}
             <div className="mb-6">
-              <p className="text-sm font-semibold text-foreground mb-2">Specializations</p>
+              <p className="text-sm font-semibold text-foreground mb-2">
+                Specializations
+              </p>
               <div className="flex flex-wrap gap-2">
                 {mentor.skills.map((skill) => (
                   <span

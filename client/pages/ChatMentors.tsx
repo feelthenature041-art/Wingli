@@ -361,7 +361,10 @@ export default function ChatMentors() {
                   asChild
                   className="flex-1 h-9 rounded-full bg-primary hover:bg-primary/90 text-white flex items-center justify-center gap-2"
                 >
-                  <a href="#" className="flex items-center justify-center gap-2">
+                  <a
+                    href="#"
+                    className="flex items-center justify-center gap-2"
+                  >
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
                       alt=""

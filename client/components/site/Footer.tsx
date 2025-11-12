@@ -78,7 +78,10 @@ export default function Footer() {
           <h4 className="font-semibold mb-3 text-sm">REGISTRATION</h4>
           <ul className="space-y-2 text-white/80 text-sm mb-6">
             <li>
-              <a href="/mentor-registration" className="hover:text-white transition">
+              <a
+                href="/mentor-registration"
+                className="hover:text-white transition"
+              >
                 Become a Mentor
               </a>
             </li>

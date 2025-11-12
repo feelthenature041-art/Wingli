@@ -36,6 +36,7 @@ const App = () => (
             <Route path="/mentors" element={<MentorsList />} />
             <Route path="/chat-mentors" element={<ChatMentors />} />
             <Route path="/call-mentors" element={<CallMentors />} />
+            <Route path="/mentor/:id" element={<MentorProfile />} />
             <Route path="/login" element={<Login />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

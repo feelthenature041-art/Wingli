@@ -27,19 +27,11 @@ export default function MentorProfile() {
 
   return (
     <section className="container py-8 md:py-12">
-      <Button
-        variant="ghost"
-        onClick={() => navigate(-1)}
-        className="mb-6 text-primary hover:bg-primary/10"
-      >
-        ← Back
-      </Button>
-
       <div className="max-w-4xl mx-auto">
         {/* Mentor Card - Top Section */}
-        <div className="rounded-lg border border-slate-200 bg-white overflow-hidden mb-8">
+        <div className="rounded-lg border border-slate-200 bg-white overflow-hidden mb-8 flex flex-col md:flex-row">
           {/* Mentor Image */}
-          <div className="aspect-video overflow-hidden bg-slate-100">
+          <div className="w-full md:w-80 h-60 md:h-auto flex-shrink-0 overflow-hidden bg-slate-100">
             <img
               src={mentor.img}
               alt={mentor.name}
@@ -48,7 +40,7 @@ export default function MentorProfile() {
           </div>
 
           {/* Mentor Info */}
-          <div className="p-6">
+          <div className="p-6 flex-1 flex flex-col">
             <h1 className="text-3xl font-bold text-foreground mb-2">
               {mentor.name}
             </h1>

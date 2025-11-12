@@ -377,9 +377,9 @@ export default function CallMentors() {
                   variant="outline"
                   className="flex-1 h-9 rounded-full flex items-center justify-center"
                 >
-                  <a href="#">
+                  <Link to={`/mentor/${mentor.id}`}>
                     <span className="text-xs font-medium">View Profile</span>
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

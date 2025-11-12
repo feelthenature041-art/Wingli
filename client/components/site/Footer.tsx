@@ -76,8 +76,20 @@ export default function Footer() {
         </div>
         <div>
           <h4 className="font-semibold mb-3 text-sm">REGISTRATION</h4>
+          <ul className="space-y-2 text-white/80 text-sm mb-6">
+            <li>
+              <a href="/mentor-registration" className="hover:text-white transition">
+                Become a Mentor
+              </a>
+            </li>
+            <li>
+              <a href="/mentor-login" className="hover:text-white transition">
+                Mentor Login
+              </a>
+            </li>
+          </ul>
           <div className="space-y-3">
-            <p className="text-white/80 text-sm">Follow Us</p>
+            <h5 className="font-semibold text-sm">FOLLOW US</h5>
             <div className="flex items-center gap-4">
               <a
                 href="#"

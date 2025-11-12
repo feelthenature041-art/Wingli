@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, User } from "lucide-react";
 
 const navItemCls =
   "px-3 py-2 text-sm font-medium transition-colors text-foreground/70 hover:text-foreground";
@@ -45,6 +45,11 @@ function MobileMenu() {
               Blog
             </a>
             <div className="flex items-center gap-2 pt-2">
+              <Button asChild className="h-9 px-4 rounded-full">
+                <a href="/find-a-mentor" onClick={() => setOpen(false)}>
+                  Find a Mentor
+                </a>
+              </Button>
               <Button
                 asChild
                 variant="outline"
@@ -52,11 +57,6 @@ function MobileMenu() {
               >
                 <a href="/login" onClick={() => setOpen(false)}>
                   Login
-                </a>
-              </Button>
-              <Button asChild className="h-9 px-4 rounded-full">
-                <a href="/find-a-mentor" onClick={() => setOpen(false)}>
-                  Find a Mentor
                 </a>
               </Button>
             </div>
@@ -68,6 +68,8 @@ function MobileMenu() {
 }
 
 export default function Header() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container flex h-16 items-center justify-between">
@@ -93,12 +95,27 @@ export default function Header() {
           </a>
         </nav>
         <div className="hidden md:flex items-center gap-3">
-          <Button asChild variant="outline" className="rounded-full px-5 h-10">
-            <a href="/login">Login</a>
-          </Button>
           <Button asChild className="rounded-full px-5 h-10">
             <a href="/find-a-mentor">Find a Mentor</a>
           </Button>
+          {isLoggedIn ? (
+            <button
+              onClick={() => setIsLoggedIn(false)}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-primary/10 hover:bg-primary/20 transition-colors"
+              aria-label="Profile"
+            >
+              <User className="h-5 w-5 text-primary" />
+            </button>
+          ) : (
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full px-5 h-10"
+              onClick={() => setIsLoggedIn(true)}
+            >
+              <a href="/login">Login</a>
+            </Button>
+          )}
         </div>
         <MobileMenu />
       </div>

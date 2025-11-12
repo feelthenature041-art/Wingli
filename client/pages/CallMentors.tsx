@@ -492,20 +492,33 @@ export default function CallMentors() {
                 ₹{mentor.price}/Min
               </p>
 
-              {/* Action Button - Call Now Only */}
-              <Button
-                asChild
-                className="w-full h-9 rounded-full bg-primary hover:bg-primary/90 text-white flex items-center justify-center gap-2"
-              >
-                <a href="#" className="flex items-center justify-center gap-2">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F953c6c3b574b4362ade62411724fab94?format=webp&width=100"
-                    alt=""
-                    className="h-4 w-4 brightness-0 invert"
-                  />
-                  <span className="text-xs font-medium">Call Now</span>
-                </a>
-              </Button>
+              {/* Action Buttons */}
+              <div className="flex gap-2">
+                {/* Call Now Button */}
+                <Button
+                  asChild
+                  className="flex-1 h-9 rounded-full bg-primary hover:bg-primary/90 text-white flex items-center justify-center gap-2"
+                >
+                  <a href="#" className="flex items-center justify-center gap-2">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F953c6c3b574b4362ade62411724fab94?format=webp&width=100"
+                      alt=""
+                      className="h-4 w-4 brightness-0 invert"
+                    />
+                    <span className="text-xs font-medium">Call Now</span>
+                  </a>
+                </Button>
+                {/* View Profile Button */}
+                <Button
+                  asChild
+                  variant="outline"
+                  className="flex-1 h-9 rounded-full flex items-center justify-center"
+                >
+                  <a href="#">
+                    <span className="text-xs font-medium">View Profile</span>
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         ))}

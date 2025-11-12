@@ -15,6 +15,7 @@ import FindMentor from "@/pages/FindMentor";
 import MentorsList from "@/pages/MentorsList";
 import ChatMentors from "@/pages/ChatMentors";
 import CallMentors from "@/pages/CallMentors";
+import MentorProfile from "@/pages/MentorProfile";
 import Login from "@/pages/Login";
 
 const queryClient = new QueryClient();

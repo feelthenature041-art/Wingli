@@ -141,7 +141,9 @@ const mentorsData = [
   },
 ];
 
-const allLanguages = [...new Set(mentorsData.flatMap((m) => m.languages))].sort();
+const allLanguages = [
+  ...new Set(mentorsData.flatMap((m) => m.languages)),
+].sort();
 const allSkills = [...new Set(mentorsData.flatMap((m) => m.skills))].sort();
 const allCountries = [...new Set(mentorsData.map((m) => m.country))].sort();
 const allAirlines = [...new Set(mentorsData.map((m) => m.airline))].sort();
@@ -180,45 +182,44 @@ export default function CallMentors() {
     });
   };
 
-  const hasActiveFilters =
-    Object.values(filters).some((arr) => arr.length > 0);
+  const hasActiveFilters = Object.values(filters).some((arr) => arr.length > 0);
 
   const filteredAndSortedMentors = useMemo(() => {
     let filtered = mentorsData;
 
     if (searchQuery.trim()) {
       filtered = filtered.filter((mentor) =>
-        mentor.name.toLowerCase().includes(searchQuery.toLowerCase())
+        mentor.name.toLowerCase().includes(searchQuery.toLowerCase()),
       );
     }
 
     if (filters.languages.length > 0) {
       filtered = filtered.filter((mentor) =>
-        filters.languages.some((lang) => mentor.languages.includes(lang))
+        filters.languages.some((lang) => mentor.languages.includes(lang)),
       );
     }
 
     if (filters.skills.length > 0) {
       filtered = filtered.filter((mentor) =>
-        filters.skills.some((skill) => mentor.skills.includes(skill))
+        filters.skills.some((skill) => mentor.skills.includes(skill)),
       );
     }
 
     if (filters.countries.length > 0) {
       filtered = filtered.filter((mentor) =>
-        filters.countries.includes(mentor.country)
+        filters.countries.includes(mentor.country),
       );
     }
 
     if (filters.genders.length > 0) {
       filtered = filtered.filter((mentor) =>
-        filters.genders.includes(mentor.gender)
+        filters.genders.includes(mentor.gender),
       );
     }
 
     if (filters.airlines.length > 0) {
       filtered = filtered.filter((mentor) =>
-        filters.airlines.includes(mentor.airline)
+        filters.airlines.includes(mentor.airline),
       );
     }
 
@@ -253,7 +254,8 @@ export default function CallMentors() {
           Call with Mentors
         </h1>
         <p className="text-muted-foreground mb-6">
-          Schedule a one-on-one call for in-depth guidance and personalized feedback
+          Schedule a one-on-one call for in-depth guidance and personalized
+          feedback
         </p>
 
         {/* Search and Filter Bar */}
@@ -511,7 +513,9 @@ export default function CallMentors() {
 
       {filteredAndSortedMentors.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-slate-600 text-lg">No mentors found matching your filters.</p>
+          <p className="text-slate-600 text-lg">
+            No mentors found matching your filters.
+          </p>
         </div>
       )}
     </section>

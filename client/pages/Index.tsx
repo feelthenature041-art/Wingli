@@ -49,19 +49,19 @@ const mentors = [
     name: "Vidya Rai",
     airline: "IndiGo",
     years: 6,
-    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e?format=webp&width=400",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Ff222486b76124f55b28eb28631058b0e?format=webp&width=800",
   },
   {
     name: "Bibechana Rai",
     airline: "Air India",
     years: 8,
-    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e?format=webp&width=400",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Ff222486b76124f55b28eb28631058b0e?format=webp&width=800",
   },
   {
     name: "Ruchita Lama",
     airline: "Qatar Airways",
     years: 5,
-    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e?format=webp&width=400",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Ff222486b76124f55b28eb28631058b0e?format=webp&width=800",
   },
 ];
 

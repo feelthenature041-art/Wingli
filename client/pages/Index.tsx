@@ -113,7 +113,7 @@ export default function Index() {
               <h1 className="text-[28px] font-extrabold leading-tight text-primary mb-4">
                 Got Questions?
                 <br />
-                <span style={{ color: '#3D87C7' }}>We've Got Answers</span>
+                <span style={{ color: "#3D87C7" }}>We've Got Answers</span>
               </h1>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-sm">
@@ -173,7 +173,8 @@ export default function Index() {
           <div className="absolute inset-0 pointer-events-none flex items-center">
             <div className="ml-auto max-w-xl p-10 pointer-events-auto">
               <h1 className="text-5xl font-extrabold tracking-tight text-primary leading-tight">
-                Got Questions? <span style={{ color: '#3D87C7' }}>We've Got Answers</span>
+                Got Questions?{" "}
+                <span style={{ color: "#3D87C7" }}>We've Got Answers</span>
               </h1>
               <p className="mt-4 text-slate-700 text-lg max-w-xl">
                 Real guidance from real air hostesses to help you own your

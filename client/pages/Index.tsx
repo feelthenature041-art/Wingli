@@ -87,7 +87,7 @@ const videoLessons = [
   {
     title: "How to Prepare for Air Hostess Interviews",
     instructor: "Vidya Rai",
-    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e?format=webp&width=600",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3499e689d33e426a9ed553ec8139b091?format=webp&width=800",
   },
   {
     title: "Grooming & Presentation Masterclass",

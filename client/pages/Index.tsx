@@ -69,17 +69,17 @@ const blogPosts = [
   {
     title: "How Mentorship Helps in Building Better Airlines",
     date: "October 3, 2024",
-    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e?format=webp&width=600",
+    img: "https://images.pexels.com/photos/34976240/pexels-photo-34976240.jpeg",
   },
   {
     title: "How Mentorship Helps in Building Better Airlines",
     date: "October 3, 2024",
-    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e?format=webp&width=600",
+    img: "https://images.pexels.com/photos/91217/pexels-photo-91217.jpeg",
   },
   {
     title: "How Mentorship Helps in Building Better Airlines",
     date: "October 3, 2024",
-    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e?format=webp&width=600",
+    img: "https://images.pexels.com/photos/31948477/pexels-photo-31948477.jpeg",
   },
 ];
 

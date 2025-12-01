@@ -109,6 +109,13 @@ export default function Index() {
         {/* Mobile layout */}
         <div className="md:hidden">
           <div className="space-y-4">
+            <div className="text-center px-2">
+              <h1 className="text-[28px] font-extrabold leading-tight text-primary mb-4">
+                Got Questions?
+                <br />
+                We've Got Answers
+              </h1>
+            </div>
             <div className="rounded-2xl overflow-hidden bg-white/70 shadow-sm">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3c4d8654d58c478aa755903fda071d08?format=webp&width=800"
@@ -117,11 +124,6 @@ export default function Index() {
               />
             </div>
             <div className="text-center px-2">
-              <h1 className="text-[28px] font-extrabold leading-tight text-primary mb-2">
-                Got Questions?
-                <br />
-                We've Got Answers
-              </h1>
               <p className="text-slate-700 text-sm leading-snug mb-4">
                 Real guidance from real air hostesses to help you on your
                 career path.

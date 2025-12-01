@@ -124,7 +124,8 @@ export default function Index() {
               />
               <div className="absolute top-4 right-4 max-w-[120px] pointer-events-none">
                 <p className="text-white text-xs leading-snug font-medium drop-shadow-md">
-                  Real guidance from real air hostesses to help you own your career path
+                  Real guidance from real air hostesses to help you own your
+                  career path
                 </p>
               </div>
             </div>

@@ -31,7 +31,7 @@ export default function Blog() {
         </p>
       </section>
 
-      <section className="container py-10 md:py-14">
+      <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post, i) => (
             <div

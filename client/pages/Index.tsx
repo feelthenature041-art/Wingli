@@ -108,53 +108,43 @@ export default function Index() {
       <section className="container py-6 md:py-8">
         {/* Mobile layout */}
         <div className="md:hidden">
-          <div className="rounded-2xl border bg-white/70 p-3 shadow-sm">
-            <div className="grid grid-cols-[120px_1fr] gap-3 items-center">
+          <div className="space-y-4">
+            <div className="rounded-2xl overflow-hidden bg-white/70 shadow-sm">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F06b45d943d354a8fa12f91c8e495963f?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3c4d8654d58c478aa755903fda071d08?format=webp&width=800"
                 alt="Cabin crew with airplane"
-                className="h-28 w-full object-contain"
+                className="w-full h-auto object-cover"
               />
-              <div>
-                <h1 className="text-[22px] font-extrabold leading-snug text-primary">
-                  Got Questions?
-                  <br />
-                  We've Got Answers
-                </h1>
-                <p className="mt-2 text-slate-700 text-[13px] leading-snug">
-                  Real guidance from real air hostesses to help you on your
-                  career path.
-                </p>
-              </div>
             </div>
-            <div className="mt-3 flex gap-2">
-              <Button
-                asChild
-                className="h-9 pl-1 pr-4 rounded-full text-sm flex items-center gap-2"
-              >
-                <a href="/find-a-mentor">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
-                    alt=""
-                    className="h-6 w-6"
-                  />
-                  Chat Now
-                </a>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                className="h-9 pl-1 pr-4 rounded-full text-sm bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] flex items-center gap-2"
-              >
-                <a href="/find-a-mentor">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F953c6c3b574b4362ade62411724fab94?format=webp&width=100"
-                    alt=""
-                    className="h-6 w-6"
-                  />
-                  Call Now
-                </a>
-              </Button>
+            <div className="text-center px-2">
+              <h1 className="text-[28px] font-extrabold leading-tight text-primary mb-2">
+                Got Questions?
+                <br />
+                We've Got Answers
+              </h1>
+              <p className="text-slate-700 text-sm leading-snug mb-4">
+                Real guidance from real air hostesses to help you on your
+                career path.
+              </p>
+              <div className="flex gap-3 justify-center">
+                <Button
+                  asChild
+                  className="h-10 px-6 rounded-full text-sm"
+                >
+                  <a href="/find-a-mentor">
+                    Chat with Mentor
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="h-10 px-6 rounded-full text-sm"
+                >
+                  <a href="/find-a-mentor">
+                    Talk to Mentor
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

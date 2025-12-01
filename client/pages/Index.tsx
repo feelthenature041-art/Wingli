@@ -133,7 +133,7 @@ export default function Index() {
               <div className="flex gap-3 justify-center">
                 <Button
                   asChild
-                  className="h-10 pl-2 pr-6 rounded-full text-sm flex items-center gap-2"
+                  className="h-9 pl-1 pr-4 rounded-full text-sm flex items-center gap-2"
                 >
                   <a href="/find-a-mentor">
                     <img
@@ -147,7 +147,7 @@ export default function Index() {
                 <Button
                   asChild
                   variant="outline"
-                  className="h-10 pl-2 pr-6 rounded-full text-sm bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] flex items-center gap-2"
+                  className="h-9 pl-1 pr-4 rounded-full text-sm bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] flex items-center gap-2"
                 >
                   <a href="/find-a-mentor">
                     <img

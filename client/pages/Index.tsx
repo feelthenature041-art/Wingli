@@ -116,12 +116,17 @@ export default function Index() {
                 We've Got Answers
               </h1>
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-sm">
+            <div className="relative rounded-2xl overflow-hidden shadow-sm">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3c4d8654d58c478aa755903fda071d08?format=webp&width=800"
                 alt="Cabin crew with airplane"
                 className="w-full h-auto"
               />
+              <div className="absolute top-4 right-4 max-w-[120px] pointer-events-none">
+                <p className="text-white text-xs leading-snug font-medium drop-shadow-md">
+                  Real guidance from real air hostesses to help you own your career path
+                </p>
+              </div>
             </div>
             <div className="text-center px-2">
               <div className="flex gap-3 justify-center">

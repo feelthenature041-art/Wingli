@@ -116,18 +116,20 @@ export default function Index() {
                 We've Got Answers
               </h1>
             </div>
-            <div className="rounded-2xl overflow-hidden bg-white/70 shadow-sm">
+            <div className="relative rounded-2xl overflow-hidden bg-white/70 shadow-sm">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3c4d8654d58c478aa755903fda071d08?format=webp&width=800"
                 alt="Cabin crew with airplane"
                 className="w-full h-auto object-cover"
               />
+              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/40 to-transparent p-4">
+                <p className="text-white text-sm leading-snug font-medium">
+                  Real guidance from real air hostesses to help you on your
+                  career path.
+                </p>
+              </div>
             </div>
             <div className="text-center px-2">
-              <p className="text-slate-700 text-sm leading-snug mb-4">
-                Real guidance from real air hostesses to help you on your
-                career path.
-              </p>
               <div className="flex gap-3 justify-center">
                 <Button
                   asChild

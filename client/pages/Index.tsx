@@ -255,7 +255,7 @@ export default function Index() {
       </section>
 
       {/* Ask any topic with */}
-      <section className="container py-10 md:py-14">
+      <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
         <h2 className="text-left text-2xl md:text-3xl font-extrabold tracking-tight">
           Ask any topic with
         </h2>
@@ -292,7 +292,7 @@ export default function Index() {
       </section>
 
       {/* How it works and Top Rated Mentors - Two Column Layout (1/3 and 2/3) */}
-      <section className="container py-10 md:py-14">
+      <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
           {/* How it works - 1/3 width */}
           <div>
@@ -396,7 +396,7 @@ export default function Index() {
       </section>
 
       {/* Video Lessons */}
-      <section className="container py-10 md:py-14">
+      <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
         <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
           Video Lessons
         </h2>
@@ -444,7 +444,7 @@ export default function Index() {
       </section>
 
       {/* Blogs */}
-      <section className="container py-10 md:py-14">
+      <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
             Blogs
@@ -488,7 +488,7 @@ export default function Index() {
       </section>
 
       {/* About Wingli & Why Wingli */}
-      <section className="container py-10 md:py-14">
+      <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
@@ -528,7 +528,7 @@ export default function Index() {
       </section>
 
       {/* Testimonials */}
-      <section className="container py-10 md:py-14">
+      <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
         <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
           Testimonial
         </h2>

@@ -131,7 +131,10 @@ export default function Index() {
             </div>
             <div className="text-center px-2">
               <div className="flex gap-3 justify-center">
-                <Button asChild className="h-10 pl-2 pr-6 rounded-full text-sm flex items-center gap-2">
+                <Button
+                  asChild
+                  className="h-10 pl-2 pr-6 rounded-full text-sm flex items-center gap-2"
+                >
                   <a href="/find-a-mentor">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"

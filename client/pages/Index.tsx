@@ -131,22 +131,15 @@ export default function Index() {
             </div>
             <div className="text-center px-2">
               <div className="flex gap-3 justify-center">
-                <Button
-                  asChild
-                  className="h-10 px-6 rounded-full text-sm"
-                >
-                  <a href="/find-a-mentor">
-                    Chat with Mentor
-                  </a>
+                <Button asChild className="h-10 px-6 rounded-full text-sm">
+                  <a href="/find-a-mentor">Chat with Mentor</a>
                 </Button>
                 <Button
                   asChild
                   variant="outline"
                   className="h-10 px-6 rounded-full text-sm"
                 >
-                  <a href="/find-a-mentor">
-                    Talk to Mentor
-                  </a>
+                  <a href="/find-a-mentor">Talk to Mentor</a>
                 </Button>
               </div>
             </div>
@@ -282,7 +275,9 @@ export default function Index() {
             >
               <div className="text-4xl mb-4 h-auto">{audience.icon}</div>
               <h3 className="font-semibold text-lg">{audience.title}</h3>
-              <p className="text-muted-foreground text-sm mt-2">{audience.desc}</p>
+              <p className="text-muted-foreground text-sm mt-2">
+                {audience.desc}
+              </p>
             </div>
           ))}
         </div>

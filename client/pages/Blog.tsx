@@ -27,7 +27,8 @@ export default function Blog() {
           Blog
         </h1>
         <p className="text-muted-foreground max-w-2xl">
-          Explore articles and insights from our experienced mentors in the aviation industry.
+          Explore articles and insights from our experienced mentors in the
+          aviation industry.
         </p>
       </section>
 

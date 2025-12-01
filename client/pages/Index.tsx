@@ -97,7 +97,7 @@ const videoLessons = [
   {
     title: "Communication & Etiquette for Cabin Crew",
     instructor: "Ruchita Lama",
-    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e?format=webp&width=600",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F90dad98178bc4c65b8f1260e3ea1c032?format=webp&width=800",
   },
 ];
 

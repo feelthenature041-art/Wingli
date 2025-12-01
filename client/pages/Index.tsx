@@ -257,37 +257,40 @@ export default function Index() {
       {/* Ask any topic with */}
       <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
         <h2 className="text-left text-2xl md:text-3xl font-extrabold tracking-tight">
-          Ask any topic with
+          Who Connects With Us
         </h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
-              title: "Topic 1",
-              desc: "Ask anything related to Topic 1. Analysis, mentorship, highly recommended!",
+              icon: "🎓",
+              title: "Students & Freshers",
+              desc: "Perfect for beginners entering the aviation industry.",
             },
             {
-              title: "Topic 1",
-              desc: "Ask anything related to Topic 1. Analysis, mentorship, highly recommended!",
+              icon: "💼",
+              title: "Career Switchers",
+              desc: "Professionals planning to join the airline industry.",
             },
             {
-              title: "Topic 1",
-              desc: "Ask anything related to Topic 1. Analysis, mentorship, highly recommended!",
+              icon: "🔥",
+              title: "Interview-Ready Aspirants",
+              desc: "Sharpen your skills with real cabin crew mentors.",
             },
-          ].map((topic, i) => (
+            {
+              icon: "✈️",
+              title: "Working Cabin Crew",
+              desc: "Upskill and prepare for international airline opportunities.",
+            },
+          ].map((audience, i) => (
             <div
               key={i}
               className="rounded-2xl border p-6 bg-white text-center hover:shadow-lg transition"
             >
-              <div className="h-16 w-16 rounded-full bg-slate-200 mx-auto mb-4"></div>
-              <h3 className="font-semibold text-lg">{topic.title}</h3>
-              <p className="text-muted-foreground text-sm mt-2">{topic.desc}</p>
+              <div className="text-4xl mb-4 h-auto">{audience.icon}</div>
+              <h3 className="font-semibold text-lg">{audience.title}</h3>
+              <p className="text-muted-foreground text-sm mt-2">{audience.desc}</p>
             </div>
           ))}
-        </div>
-        <div className="flex justify-center mt-6 gap-1">
-          <button className="h-2 w-2 rounded-full bg-primary"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
         </div>
       </section>
 

@@ -92,7 +92,7 @@ const videoLessons = [
   {
     title: "Grooming & Presentation Masterclass",
     instructor: "Bibechana Rai",
-    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e?format=webp&width=600",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3a4f41282efd428c93c53100230405ec?format=webp&width=800",
   },
   {
     title: "Communication & Etiquette for Cabin Crew",

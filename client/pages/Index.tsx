@@ -251,7 +251,7 @@ export default function Index() {
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-extrabold text-primary">
-              1000+
+              <AnimatedCounter targetNumber={1000} />
             </div>
             <p className="text-slate-600 text-sm md:text-base mt-2">Sessions</p>
           </div>

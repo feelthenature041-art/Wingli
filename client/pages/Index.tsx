@@ -377,7 +377,9 @@ export default function Index() {
                     />
                     <div className="p-3">
                       <h3 className="font-semibold text-sm">{m.name}</h3>
-                      <p className="text-muted-foreground text-xs">{m.airline}</p>
+                      <p className="text-muted-foreground text-xs">
+                        {m.airline}
+                      </p>
                       <div className="flex items-center gap-1 mt-1 mb-2">
                         <span className="text-orange-400 text-xs">★</span>
                         <span className="text-xs font-medium">
@@ -392,7 +394,10 @@ export default function Index() {
                           Airline Specific Tips
                         </span>
                       </div>
-                      <Button asChild className="w-full rounded-full h-7 text-xs">
+                      <Button
+                        asChild
+                        className="w-full rounded-full h-7 text-xs"
+                      >
                         <a href="/find-a-mentor">View Profile</a>
                       </Button>
                     </div>
@@ -480,7 +485,11 @@ export default function Index() {
                   <p className="text-muted-foreground text-sm mt-2">
                     {post.date}
                   </p>
-                  <Button asChild variant="outline" className="mt-4 rounded-full">
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="mt-4 rounded-full"
+                  >
                     <a href="/blog">Read More</a>
                   </Button>
                 </div>
@@ -542,7 +551,10 @@ export default function Index() {
               "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
               "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
             ].map((t, i) => (
-              <figure key={i} className="rounded-2xl border p-6 bg-white/70 flex-shrink-0 w-80">
+              <figure
+                key={i}
+                className="rounded-2xl border p-6 bg-white/70 flex-shrink-0 w-80"
+              >
                 <Quote className="h-6 w-6 text-primary/60" />
                 <blockquote className="mt-3 text-slate-800">{t}</blockquote>
                 <figcaption className="mt-3 text-sm text-muted-foreground">

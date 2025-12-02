@@ -202,11 +202,11 @@ export default function MentorsList() {
             </div>
 
             {/* Mentor Info */}
-            <div className="p-3">
-              <h3 className="text-base font-semibold text-foreground">
+            <div className="p-2 md:p-3">
+              <h3 className="text-sm md:text-base font-semibold text-foreground">
                 {mentor.name}
               </h3>
-              <p className="text-xs text-slate-600 mb-2">{mentor.title}</p>
+              <p className="text-xs text-slate-600 mb-2 line-clamp-1">{mentor.title}</p>
 
               {/* Rating and Experience */}
               <div className="flex items-center gap-2 text-xs text-slate-600 mb-2">

@@ -129,10 +129,10 @@ export default function MentorsList() {
   }, [searchQuery, sortBy]);
 
   return (
-    <section className="container py-8 md:py-12">
+    <section className="container py-6 md:py-12">
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-6">
+      <div className="mb-6 md:mb-8">
+        <h1 className="text-xl md:text-3xl font-extrabold tracking-tight mb-4 md:mb-6">
           Find Your Mentor
         </h1>
 

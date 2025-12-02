@@ -245,7 +245,7 @@ export default function Index() {
         <div className="grid grid-cols-3 gap-4 md:gap-8">
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-extrabold text-primary">
-              100+
+              <AnimatedCounter targetNumber={100} />
             </div>
             <p className="text-slate-600 text-sm md:text-base mt-2">Mentors</p>
           </div>

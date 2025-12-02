@@ -12,6 +12,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { useCounterAnimation } from "@/hooks/use-counter-animation";
 
 const logos = [
   {

@@ -193,7 +193,7 @@ export default function MentorsList() {
             className="rounded-lg border border-slate-200 bg-white overflow-hidden hover:shadow-md transition-shadow"
           >
             {/* Mentor Image */}
-            <div className="aspect-video overflow-hidden bg-slate-100">
+            <div className="aspect-square md:aspect-video overflow-hidden bg-slate-100">
               <img
                 src={mentor.img}
                 alt={mentor.name}

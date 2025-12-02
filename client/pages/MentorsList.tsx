@@ -235,7 +235,7 @@ export default function MentorsList() {
               </div>
 
               {/* Price */}
-              <p className="text-xs font-semibold text-foreground mb-3">
+              <p className="text-xs font-semibold text-foreground mb-2 md:mb-3">
                 ₹{mentor.price}/Min
               </p>
 

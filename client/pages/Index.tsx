@@ -264,40 +264,42 @@ export default function Index() {
         <h2 className="text-left text-2xl md:text-3xl font-extrabold tracking-tight">
           Who Connects With Us
         </h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            {
-              icon: "🎓",
-              title: "Students & Freshers",
-              desc: "Perfect for beginners entering the aviation industry.",
-            },
-            {
-              icon: "💼",
-              title: "Career Switchers",
-              desc: "Professionals planning to join the airline industry.",
-            },
-            {
-              icon: "🔥",
-              title: "Interview-Ready Aspirants",
-              desc: "Sharpen your skills with real cabin crew mentors.",
-            },
-            {
-              icon: "✈️",
-              title: "Working Cabin Crew",
-              desc: "Upskill and prepare for international airline opportunities.",
-            },
-          ].map((audience, i) => (
-            <div
-              key={i}
-              className="rounded-2xl border p-6 bg-white text-center hover:shadow-lg transition"
-            >
-              <div className="text-4xl mb-4 h-auto">{audience.icon}</div>
-              <h3 className="font-semibold text-lg">{audience.title}</h3>
-              <p className="text-muted-foreground text-sm mt-2">
-                {audience.desc}
-              </p>
-            </div>
-          ))}
+        <div className="mt-8 overflow-x-auto pb-2 -mx-4 px-4">
+          <div className="flex gap-6 min-w-min">
+            {[
+              {
+                icon: "🎓",
+                title: "Students & Freshers",
+                desc: "Perfect for beginners entering the aviation industry.",
+              },
+              {
+                icon: "💼",
+                title: "Career Switchers",
+                desc: "Professionals planning to join the airline industry.",
+              },
+              {
+                icon: "🔥",
+                title: "Interview-Ready Aspirants",
+                desc: "Sharpen your skills with real cabin crew mentors.",
+              },
+              {
+                icon: "✈️",
+                title: "Working Cabin Crew",
+                desc: "Upskill and prepare for international airline opportunities.",
+              },
+            ].map((audience, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border p-6 bg-white text-center hover:shadow-lg transition flex-shrink-0 w-64"
+              >
+                <div className="text-4xl mb-4 h-auto">{audience.icon}</div>
+                <h3 className="font-semibold text-lg">{audience.title}</h3>
+                <p className="text-muted-foreground text-sm mt-2">
+                  {audience.desc}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

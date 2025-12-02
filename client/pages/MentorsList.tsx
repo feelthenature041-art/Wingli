@@ -178,7 +178,10 @@ export default function MentorsList() {
             <Button className="flex-1 h-9 rounded-full bg-slate-900 hover:bg-slate-800">
               Chat
             </Button>
-            <Button variant="outline" className="flex-1 h-9 rounded-full border-slate-300 hover:bg-slate-50">
+            <Button
+              variant="outline"
+              className="flex-1 h-9 rounded-full border-slate-300 hover:bg-slate-50"
+            >
               Call
             </Button>
           </div>
@@ -206,13 +209,13 @@ export default function MentorsList() {
               <h3 className="text-sm md:text-base font-semibold text-foreground">
                 {mentor.name}
               </h3>
-              <p className="text-xs text-slate-600 mb-2 line-clamp-1">{mentor.title}</p>
+              <p className="text-xs text-slate-600 mb-2 line-clamp-1">
+                {mentor.title}
+              </p>
 
               {/* Rating and Experience */}
               <div className="flex items-center gap-1 text-xs text-slate-600 mb-2">
-                <span className="font-medium text-xs">
-                  ⭐{mentor.rating}
-                </span>
+                <span className="font-medium text-xs">⭐{mentor.rating}</span>
                 <span>•</span>
                 <span className="text-xs">{mentor.years}y</span>
               </div>
@@ -254,7 +257,9 @@ export default function MentorsList() {
                       alt=""
                       className="h-3 md:h-4 w-3 md:w-4"
                     />
-                    <span className="text-xs font-medium hidden md:inline">Chat Now</span>
+                    <span className="text-xs font-medium hidden md:inline">
+                      Chat Now
+                    </span>
                     <span className="text-xs font-medium md:hidden">Chat</span>
                   </a>
                 </Button>

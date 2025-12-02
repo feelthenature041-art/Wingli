@@ -409,46 +409,43 @@ export default function Index() {
         <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
           Video Lessons
         </h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {videoLessons.map((lesson, i) => (
-            <div
-              key={i}
-              className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition"
-            >
-              <div className="relative">
-                <img
-                  src={lesson.img}
-                  alt={lesson.title}
-                  className="h-48 w-full object-cover bg-slate-200"
-                />
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center">
-                    <div
-                      className="w-0 h-0 border-l-6 border-l-transparent border-r-0 border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1"
-                      style={{
-                        borderLeft: "8px solid white",
-                        borderTop: "5px solid transparent",
-                        borderBottom: "5px solid transparent",
-                      }}
-                    ></div>
+        <div className="overflow-x-auto pb-2 -mx-4 px-4">
+          <div className="flex gap-6 min-w-min">
+            {videoLessons.map((lesson, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition flex-shrink-0 w-80"
+              >
+                <div className="relative">
+                  <img
+                    src={lesson.img}
+                    alt={lesson.title}
+                    className="h-48 w-full object-cover bg-slate-200"
+                  />
+                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center">
+                      <div
+                        className="w-0 h-0 border-l-6 border-l-transparent border-r-0 border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1"
+                        style={{
+                          borderLeft: "8px solid white",
+                          borderTop: "5px solid transparent",
+                          borderBottom: "5px solid transparent",
+                        }}
+                      ></div>
+                    </div>
                   </div>
                 </div>
+                <div className="p-5">
+                  <h3 className="font-semibold text-lg line-clamp-2">
+                    {lesson.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mt-2">
+                    {lesson.instructor}
+                  </p>
+                </div>
               </div>
-              <div className="p-5">
-                <h3 className="font-semibold text-lg line-clamp-2">
-                  {lesson.title}
-                </h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  {lesson.instructor}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-center mt-6 gap-1">
-          <button className="h-2 w-2 rounded-full bg-primary"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -464,35 +461,32 @@ export default function Index() {
             </a>
           </Button>
         </div>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.map((post, i) => (
-            <div
-              key={i}
-              className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition"
-            >
-              <img
-                src={post.img}
-                alt={post.title}
-                className="h-48 w-full object-cover bg-slate-200"
-              />
-              <div className="p-5">
-                <h3 className="font-semibold text-lg line-clamp-2">
-                  {post.title}
-                </h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  {post.date}
-                </p>
-                <Button asChild variant="outline" className="mt-4 rounded-full">
-                  <a href="/blog">Read More</a>
-                </Button>
+        <div className="overflow-x-auto pb-2 -mx-4 px-4">
+          <div className="flex gap-6 min-w-min">
+            {blogPosts.map((post, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition flex-shrink-0 w-80"
+              >
+                <img
+                  src={post.img}
+                  alt={post.title}
+                  className="h-48 w-full object-cover bg-slate-200"
+                />
+                <div className="p-5">
+                  <h3 className="font-semibold text-lg line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mt-2">
+                    {post.date}
+                  </p>
+                  <Button asChild variant="outline" className="mt-4 rounded-full">
+                    <a href="/blog">Read More</a>
+                  </Button>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-center mt-6 gap-1">
-          <button className="h-2 w-2 rounded-full bg-primary"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -541,28 +535,25 @@ export default function Index() {
         <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
           Testimonial
         </h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
-          {[
-            "The guidance by Air India interview thanks to Amar's mentorship. Really recommended!",
-            "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
-            "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
-          ].map((t, i) => (
-            <figure key={i} className="rounded-2xl border p-6 bg-white/70">
-              <Quote className="h-6 w-6 text-primary/60" />
-              <blockquote className="mt-3 text-slate-800">{t}</blockquote>
-              <figcaption className="mt-3 text-sm text-muted-foreground">
-                — Bryant
-              </figcaption>
-              <Button asChild variant="outline" className="mt-4 rounded-full">
-                <a href="#">Read More</a>
-              </Button>
-            </figure>
-          ))}
-        </div>
-        <div className="flex justify-center mt-6 gap-1">
-          <button className="h-2 w-2 rounded-full bg-primary"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
-          <button className="h-2 w-2 rounded-full bg-slate-300"></button>
+        <div className="overflow-x-auto pb-2 -mx-4 px-4 mt-8">
+          <div className="flex gap-6 min-w-min">
+            {[
+              "The guidance by Air India interview thanks to Amar's mentorship. Really recommended!",
+              "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
+              "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
+            ].map((t, i) => (
+              <figure key={i} className="rounded-2xl border p-6 bg-white/70 flex-shrink-0 w-80">
+                <Quote className="h-6 w-6 text-primary/60" />
+                <blockquote className="mt-3 text-slate-800">{t}</blockquote>
+                <figcaption className="mt-3 text-sm text-muted-foreground">
+                  — Bryant
+                </figcaption>
+                <Button asChild variant="outline" className="mt-4 rounded-full">
+                  <a href="#">Read More</a>
+                </Button>
+              </figure>
+            ))}
+          </div>
         </div>
       </section>
     </>

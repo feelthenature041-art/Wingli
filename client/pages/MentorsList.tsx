@@ -209,12 +209,12 @@ export default function MentorsList() {
               <p className="text-xs text-slate-600 mb-2 line-clamp-1">{mentor.title}</p>
 
               {/* Rating and Experience */}
-              <div className="flex items-center gap-2 text-xs text-slate-600 mb-2">
-                <span className="font-medium">
-                  ⭐{mentor.rating}({mentor.reviews})
+              <div className="flex items-center gap-1 text-xs text-slate-600 mb-2">
+                <span className="font-medium text-xs">
+                  ⭐{mentor.rating}
                 </span>
                 <span>•</span>
-                <span>{mentor.years}yrs</span>
+                <span className="text-xs">{mentor.years}y</span>
               </div>
 
               {/* Languages */}

@@ -218,18 +218,18 @@ export default function MentorsList() {
               </div>
 
               {/* Languages */}
-              <div className="flex flex-wrap gap-1 mb-3">
-                {mentor.languages.slice(0, 2).map((lang) => (
+              <div className="flex flex-wrap gap-1 mb-2 md:mb-3">
+                {mentor.languages.slice(0, 1).map((lang) => (
                   <span
                     key={lang}
-                    className="px-2 py-0.5 rounded-full bg-slate-100 text-xs font-medium text-slate-700"
+                    className="px-1.5 py-0.5 rounded-full bg-slate-100 text-xs font-medium text-slate-700"
                   >
                     {lang}
                   </span>
                 ))}
-                {mentor.languages.length > 2 && (
-                  <span className="px-2 py-0.5 rounded-full bg-slate-100 text-xs font-medium text-slate-700">
-                    +{mentor.languages.length - 2}
+                {mentor.languages.length > 1 && (
+                  <span className="px-1.5 py-0.5 rounded-full bg-slate-100 text-xs font-medium text-slate-700">
+                    +{mentor.languages.length - 1}
                   </span>
                 )}
               </div>

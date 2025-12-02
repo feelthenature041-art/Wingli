@@ -240,10 +240,10 @@ export default function MentorsList() {
               </p>
 
               {/* Action Buttons */}
-              <div className="flex gap-2">
+              <div className="flex gap-1 md:gap-2">
                 <Button
                   asChild
-                  className="flex-1 h-8 rounded-full bg-slate-900 hover:bg-slate-800 flex items-center justify-center gap-1"
+                  className="flex-1 h-7 md:h-8 rounded-full bg-slate-900 hover:bg-slate-800 flex items-center justify-center gap-1"
                 >
                   <a
                     href="#"
@@ -252,16 +252,18 @@ export default function MentorsList() {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
                       alt=""
-                      className="h-4 w-4"
+                      className="h-3 md:h-4 w-3 md:w-4"
                     />
-                    <span className="text-xs font-medium">Chat Now</span>
+                    <span className="text-xs font-medium hidden md:inline">Chat Now</span>
+                    <span className="text-xs font-medium md:hidden">Chat</span>
                   </a>
                 </Button>
                 <Button
                   variant="outline"
-                  className="flex-1 h-8 rounded-full border border-slate-300 hover:bg-slate-50 text-xs font-medium"
+                  className="flex-1 h-7 md:h-8 rounded-full border border-slate-300 hover:bg-slate-50 text-xs md:text-xs font-medium"
                 >
-                  View Profile
+                  <span className="hidden md:inline">View Profile</span>
+                  <span className="md:hidden">Profile</span>
                 </Button>
               </div>
             </div>

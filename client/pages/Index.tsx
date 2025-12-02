@@ -257,7 +257,7 @@ export default function Index() {
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-extrabold text-primary">
-              90%
+              <AnimatedCounter targetNumber={90} isPercentage={true} />
             </div>
             <p className="text-slate-600 text-sm md:text-base mt-2">
               Satisfaction Rate

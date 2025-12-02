@@ -363,45 +363,42 @@ export default function Index() {
                 </a>
               </Button>
             </div>
-            <div className="grid grid-cols-3 gap-4">
-              {mentors.map((m) => (
-                <div
-                  key={m.name}
-                  className="rounded-xl border border-slate-200 overflow-hidden bg-white"
-                >
-                  <img
-                    src={m.img}
-                    alt={m.name}
-                    className="h-28 w-full object-cover bg-slate-200"
-                  />
-                  <div className="p-3">
-                    <h3 className="font-semibold text-sm">{m.name}</h3>
-                    <p className="text-muted-foreground text-xs">{m.airline}</p>
-                    <div className="flex items-center gap-1 mt-1 mb-2">
-                      <span className="text-orange-400 text-xs">★</span>
-                      <span className="text-xs font-medium">
-                        4.8(101) | {m.years}+yrs
-                      </span>
+            <div className="overflow-x-auto pb-2 -mx-4 px-4">
+              <div className="flex gap-4 min-w-min">
+                {mentors.map((m) => (
+                  <div
+                    key={m.name}
+                    className="rounded-xl border border-slate-200 overflow-hidden bg-white flex-shrink-0 w-48"
+                  >
+                    <img
+                      src={m.img}
+                      alt={m.name}
+                      className="h-28 w-full object-cover bg-slate-200"
+                    />
+                    <div className="p-3">
+                      <h3 className="font-semibold text-sm">{m.name}</h3>
+                      <p className="text-muted-foreground text-xs">{m.airline}</p>
+                      <div className="flex items-center gap-1 mt-1 mb-2">
+                        <span className="text-orange-400 text-xs">★</span>
+                        <span className="text-xs font-medium">
+                          4.8(101) | {m.years}+yrs
+                        </span>
+                      </div>
+                      <div className="flex gap-1 flex-wrap mb-2">
+                        <span className="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded">
+                          Interview Prep
+                        </span>
+                        <span className="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded">
+                          Airline Specific Tips
+                        </span>
+                      </div>
+                      <Button asChild className="w-full rounded-full h-7 text-xs">
+                        <a href="/find-a-mentor">View Profile</a>
+                      </Button>
                     </div>
-                    <div className="flex gap-1 flex-wrap mb-2">
-                      <span className="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded">
-                        Interview Prep
-                      </span>
-                      <span className="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded">
-                        Airline Specific Tips
-                      </span>
-                    </div>
-                    <Button asChild className="w-full rounded-full h-7 text-xs">
-                      <a href="/find-a-mentor">View Profile</a>
-                    </Button>
                   </div>
-                </div>
-              ))}
-            </div>
-            <div className="flex justify-center mt-6 gap-1">
-              <button className="h-2 w-2 rounded-full bg-primary"></button>
-              <button className="h-2 w-2 rounded-full bg-slate-300"></button>
-              <button className="h-2 w-2 rounded-full bg-slate-300"></button>
+                ))}
+              </div>
             </div>
           </div>
         </div>

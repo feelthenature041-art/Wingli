@@ -103,6 +103,11 @@ const videoLessons = [
   },
 ];
 
+function AnimatedCounter({ targetNumber, isPercentage = false }: { targetNumber: number; isPercentage?: boolean }) {
+  const displayNumber = useCounterAnimation(targetNumber, 2000);
+  return <>{displayNumber}{isPercentage ? '%' : '+'}</>;
+}
+
 export default function Index() {
   return (
     <>

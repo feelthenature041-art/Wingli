@@ -120,7 +120,18 @@ function AnimatedCounter({
 
 export default function Index() {
   return (
-    <>
+    <div
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 10% 15%, hsla(210, 60%, 96%, 0.8) 0%, transparent 30%), " +
+          "radial-gradient(circle at 85% 70%, hsla(210, 60%, 96%, 0.75) 0%, transparent 28%), " +
+          "radial-gradient(circle at 55% 90%, hsla(210, 60%, 96%, 0.8) 0%, transparent 32%), " +
+          "radial-gradient(circle at 92% 10%, hsla(210, 60%, 96%, 0.7) 0%, transparent 25%), " +
+          "radial-gradient(circle at 20% 70%, hsla(210, 60%, 96%, 0.75) 0%, transparent 28%), " +
+          "radial-gradient(circle at 70% 35%, hsla(210, 60%, 96%, 0.72) 0%, transparent 26%)",
+        backgroundAttachment: "fixed",
+      }}
+    >
       {/* Hero Section */}
       <section className="container py-6 md:py-8">
         {/* Mobile layout */}
@@ -589,6 +600,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

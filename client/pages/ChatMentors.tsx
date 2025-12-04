@@ -8,9 +8,7 @@ const allLanguages = [
   ...new Set(mentorsData.flatMap((m) => m.languages)),
 ].sort();
 const allSkills = [...new Set(mentorsData.flatMap((m) => m.skills))].sort();
-const allCountries = [
-  ...new Set(mentorsData.map((m) => m.country)),
-]
+const allCountries = [...new Set(mentorsData.map((m) => m.country))]
   .sort()
   .filter((country) => country !== "Nepal" && country !== "Pakistan");
 const allAirlines = [...new Set(mentorsData.map((m) => m.airline))].sort();

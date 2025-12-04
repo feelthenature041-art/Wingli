@@ -1,6 +1,16 @@
 export default function About() {
   return (
-    <>
+    <div
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 20% 30%, hsla(210, 60%, 96%, 0.8) 0%, transparent 40%), " +
+          "radial-gradient(circle at 80% 70%, hsla(208, 54%, 23%, 0.05) 0%, transparent 50%), " +
+          "radial-gradient(circle at 40% 80%, hsla(210, 60%, 96%, 0.6) 0%, transparent 45%), " +
+          "radial-gradient(circle at 90% 20%, hsla(208, 54%, 23%, 0.03) 0%, transparent 55%)",
+        backgroundAttachment: "fixed",
+        minHeight: "100vh",
+      }}
+    >
       <section className="container py-16 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           {/* About Wingli */}
@@ -76,6 +86,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

@@ -158,7 +158,7 @@ export default function Index() {
                       alt=""
                       className="h-5 w-5"
                     />
-                    Chat with Mentor
+                    Chat Now
                   </a>
                 </Button>
                 <Button
@@ -172,7 +172,7 @@ export default function Index() {
                       alt=""
                       className="h-5 w-5"
                     />
-                    Talk to Mentor
+                    Call Now
                   </a>
                 </Button>
               </div>

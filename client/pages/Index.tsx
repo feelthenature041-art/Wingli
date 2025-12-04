@@ -257,13 +257,17 @@ export default function Index() {
             <div className="text-2xl md:text-3xl font-extrabold text-primary">
               <AnimatedCounter targetNumber={100} />
             </div>
-            <p className="text-slate-600 text-sm md:text-base mt-0.5">Mentors</p>
+            <p className="text-slate-600 text-sm md:text-base mt-0.5">
+              Mentors
+            </p>
           </div>
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-extrabold text-primary">
               <AnimatedCounter targetNumber={1000} />
             </div>
-            <p className="text-slate-600 text-sm md:text-base mt-0.5">Sessions</p>
+            <p className="text-slate-600 text-sm md:text-base mt-0.5">
+              Sessions
+            </p>
           </div>
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-extrabold text-primary">

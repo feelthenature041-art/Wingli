@@ -254,19 +254,19 @@ export default function Index() {
       <section className="container py-10 md:py-14">
         <div className="grid grid-cols-3 gap-4 md:gap-8">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-extrabold text-primary">
+            <div className="text-2xl md:text-3xl font-extrabold text-primary">
               <AnimatedCounter targetNumber={100} />
             </div>
             <p className="text-slate-600 text-sm md:text-base mt-2">Mentors</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-extrabold text-primary">
+            <div className="text-2xl md:text-3xl font-extrabold text-primary">
               <AnimatedCounter targetNumber={1000} />
             </div>
             <p className="text-slate-600 text-sm md:text-base mt-2">Sessions</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-extrabold text-primary">
+            <div className="text-2xl md:text-3xl font-extrabold text-primary">
               <AnimatedCounter targetNumber={90} isPercentage={true} />
             </div>
             <p className="text-slate-600 text-sm md:text-base mt-2">

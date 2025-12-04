@@ -3,10 +3,12 @@ export default function About() {
     <div
       style={{
         backgroundImage:
-          "radial-gradient(circle at 20% 30%, hsla(210, 60%, 96%, 0.8) 0%, transparent 40%), " +
-          "radial-gradient(circle at 80% 70%, hsla(208, 54%, 23%, 0.05) 0%, transparent 50%), " +
-          "radial-gradient(circle at 40% 80%, hsla(210, 60%, 96%, 0.6) 0%, transparent 45%), " +
-          "radial-gradient(circle at 90% 20%, hsla(208, 54%, 23%, 0.03) 0%, transparent 55%)",
+          "radial-gradient(circle at 15% 20%, hsla(210, 60%, 96%, 1) 0%, transparent 35%), " +
+          "radial-gradient(circle at 85% 60%, hsla(208, 54%, 23%, 0.15) 0%, transparent 40%), " +
+          "radial-gradient(circle at 50% 85%, hsla(210, 60%, 96%, 0.9) 0%, transparent 38%), " +
+          "radial-gradient(circle at 95% 15%, hsla(208, 54%, 23%, 0.1) 0%, transparent 45%), " +
+          "radial-gradient(circle at 25% 65%, hsla(210, 60%, 96%, 0.7) 0%, transparent 42%), " +
+          "radial-gradient(circle at 70% 40%, hsla(208, 54%, 23%, 0.08) 0%, transparent 50%)",
         backgroundAttachment: "fixed",
         minHeight: "100vh",
       }}

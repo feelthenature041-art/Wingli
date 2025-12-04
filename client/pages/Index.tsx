@@ -233,7 +233,7 @@ export default function Index() {
 
       {/* Mentors from Leading Airlines */}
       <section className="container pt-2 md:pt-3 pb-6 md:pb-8">
-        <h2 className="text-center text-slate-700 font-extrabold text-xl md:text-2xl">
+        <h2 className="text-center text-slate-700 font-extrabold text-lg md:text-xl">
           Our mentors come from leading airlines.
         </h2>
         <div className="mt-8 md:mt-10 overflow-hidden">

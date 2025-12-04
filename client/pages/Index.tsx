@@ -232,7 +232,7 @@ export default function Index() {
       </section>
 
       {/* Mentors from Leading Airlines */}
-      <section className="pt-2 md:pt-3 pb-6 md:pb-8">
+      <section className="container pt-2 md:pt-3 pb-6 md:pb-8">
         <h2 className="text-center text-slate-700 font-extrabold text-xl md:text-2xl">
           Our mentors come from leading airlines.
         </h2>

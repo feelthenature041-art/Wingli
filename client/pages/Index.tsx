@@ -270,7 +270,7 @@ export default function Index() {
               <AnimatedCounter targetNumber={90} isPercentage={true} />
             </div>
             <p className="text-slate-600 text-sm md:text-base mt-0.5">
-              Satisfaction Rate
+              Satisfaction
             </p>
           </div>
         </div>

@@ -462,37 +462,7 @@ export default function Index() {
             </a>
           </Button>
         </div>
-        <div className="overflow-x-auto pb-2">
-          <div className="flex gap-6 min-w-min">
-            {blogPosts.map((post, i) => (
-              <div
-                key={i}
-                className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition flex-shrink-0 w-80"
-              >
-                <img
-                  src={post.img}
-                  alt={post.title}
-                  className="h-48 w-full object-cover bg-slate-200"
-                />
-                <div className="p-5">
-                  <h3 className="font-semibold text-lg line-clamp-2">
-                    {post.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm mt-2">
-                    {post.date}
-                  </p>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="mt-4 rounded-full"
-                  >
-                    <a href="/blog">Read More</a>
-                  </Button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <BlogsCarousel posts={blogPosts} />
       </section>
 
       {/* About Wingli & Why Wingli */}

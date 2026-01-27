@@ -1,0 +1,106 @@
+import { useState, useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+interface BlogPost {
+  title: string;
+  date: string;
+  img: string;
+}
+
+interface BlogsCarouselProps {
+  posts: BlogPost[];
+}
+
+export default function BlogsCarousel({ posts }: BlogsCarouselProps) {
+  const [scrollIndex, setScrollIndex] = useState(0);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const cardsPerView = 3;
+  const cardWidth = 320; // w-80 = 20rem = 320px
+  const gap = 24; // gap-6 = 1.5rem = 24px
+
+  const scroll = (direction: "left" | "right") => {
+    let newIndex = scrollIndex;
+    if (direction === "right") {
+      newIndex = Math.min(scrollIndex + 1, posts.length - cardsPerView);
+    } else {
+      newIndex = Math.max(scrollIndex - 1, 0);
+    }
+    setScrollIndex(newIndex);
+
+    if (scrollContainerRef.current) {
+      const scrollAmount = newIndex * (cardWidth + gap);
+      scrollContainerRef.current.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const canScrollLeft = scrollIndex > 0;
+  const canScrollRight = scrollIndex < posts.length - cardsPerView;
+
+  return (
+    <div className="relative flex items-center gap-2">
+      {/* Left Button */}
+      <button
+        onClick={() => scroll("left")}
+        disabled={!canScrollLeft}
+        className="flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+      >
+        <ChevronLeft className="h-5 w-5 text-slate-700" />
+      </button>
+
+      {/* Carousel Container */}
+      <div className="flex-1 overflow-hidden">
+        <div
+          ref={scrollContainerRef}
+          className="flex gap-6 scroll-smooth"
+          style={{
+            scrollBehavior: "smooth",
+            display: "flex",
+            overflowX: "hidden",
+          }}
+        >
+          {posts.map((post, i) => (
+            <div
+              key={i}
+              className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition flex-shrink-0 w-80"
+            >
+              <img
+                src={post.img}
+                alt={post.title}
+                className="h-48 w-full object-cover bg-slate-200"
+              />
+              <div className="p-5">
+                <h3 className="font-semibold text-lg line-clamp-2">
+                  {post.title}
+                </h3>
+                <p className="text-muted-foreground text-sm mt-2">
+                  {post.date}
+                </p>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="mt-4 rounded-full"
+                >
+                  <a href="/blog">Read More</a>
+                </Button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Right Button */}
+      <button
+        onClick={() => scroll("right")}
+        disabled={!canScrollRight}
+        className="flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+      >
+        <ChevronRight className="h-5 w-5 text-slate-700" />
+      </button>
+    </div>
+  );
+}

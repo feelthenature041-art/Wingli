@@ -99,9 +99,19 @@ export default function TestimonialsCarousel({
       <div className="flex justify-center gap-2 mt-4">
         {Array.from({ length: Math.max(0, testimonials.length - cardsPerView + 1) }).map(
           (_, i) => (
-            <div
+            <button
               key={i}
-              className={`h-2 rounded-full transition-all ${
+              onClick={() => {
+                setScrollIndex(i);
+                if (scrollContainerRef.current) {
+                  const scrollAmount = i * (cardWidth + gap);
+                  scrollContainerRef.current.scrollTo({
+                    left: scrollAmount,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+              className={`h-2 rounded-full transition-all cursor-pointer ${
                 i === scrollIndex
                   ? "bg-primary w-6"
                   : "bg-slate-300 w-2 hover:bg-slate-400"

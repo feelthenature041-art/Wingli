@@ -517,7 +517,7 @@ export default function Index() {
         <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
           Testimonial
         </h2>
-        <div className="overflow-x-auto pb-2 -mx-4 px-4 mt-8">
+        <div className="overflow-x-auto pb-2 mt-8">
           <div className="flex gap-6 min-w-min">
             {[
               "The guidance by Air India interview thanks to Amar's mentorship. Really recommended!",

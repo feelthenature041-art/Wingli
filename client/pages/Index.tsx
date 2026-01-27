@@ -13,6 +13,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useCounterAnimation } from "@/hooks/use-counter-animation";
+import TopMentorsCarousel from "@/components/TopMentorsCarousel";
+import { mentorsData } from "@/data/mentorsData";
 
 const logos = [
   {

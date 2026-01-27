@@ -387,7 +387,7 @@ export default function Index() {
         <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
           Video Lessons
         </h2>
-        <div className="overflow-x-auto pb-2 -mx-4 px-4">
+        <div className="overflow-x-auto pb-2">
           <div className="flex gap-6 min-w-min">
             {videoLessons.map((lesson, i) => (
               <div

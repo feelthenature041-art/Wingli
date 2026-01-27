@@ -117,6 +117,33 @@ const videoLessons = [
   },
 ];
 
+const testimonials = [
+  {
+    text: "The guidance by Air India interview thanks to Amar's mentorship. Really recommended!",
+    author: "Bryant",
+  },
+  {
+    text: "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
+    author: "Priya",
+  },
+  {
+    text: "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
+    author: "Rohit",
+  },
+  {
+    text: "Excellent mentorship experience! Got selected at Emirates after the guidance.",
+    author: "Anjali",
+  },
+  {
+    text: "The practical tips and interview prep were incredibly helpful and effective.",
+    author: "Vikram",
+  },
+  {
+    text: "Best decision to take mentorship from Wingli. Highly recommended for all!",
+    author: "Zara",
+  },
+];
+
 function AnimatedCounter({
   targetNumber,
   isPercentage = false,

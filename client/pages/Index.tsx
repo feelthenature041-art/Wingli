@@ -507,32 +507,10 @@ export default function Index() {
 
       {/* Testimonials */}
       <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
-        <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight">
+        <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
           Testimonial
         </h2>
-        <div className="overflow-x-auto pb-2 mt-8">
-          <div className="flex gap-6 min-w-min">
-            {[
-              "The guidance by Air India interview thanks to Amar's mentorship. Really recommended!",
-              "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
-              "I selected the Air India interview thanks to Amar's mentorship. Really recommended!",
-            ].map((t, i) => (
-              <figure
-                key={i}
-                className="rounded-2xl border p-6 bg-white/70 flex-shrink-0 w-80"
-              >
-                <Quote className="h-6 w-6 text-primary/60" />
-                <blockquote className="mt-3 text-slate-800">{t}</blockquote>
-                <figcaption className="mt-3 text-sm text-muted-foreground">
-                  — Bryant
-                </figcaption>
-                <Button asChild variant="outline" className="mt-4 rounded-full">
-                  <a href="#">Read More</a>
-                </Button>
-              </figure>
-            ))}
-          </div>
-        </div>
+        <TestimonialsCarousel testimonials={testimonials} />
       </section>
     </div>
   );

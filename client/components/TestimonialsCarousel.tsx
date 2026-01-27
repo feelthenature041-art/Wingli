@@ -43,55 +43,73 @@ export default function TestimonialsCarousel({
   const canScrollRight = scrollIndex < testimonials.length - cardsPerView;
 
   return (
-    <div className="relative flex items-center gap-2">
-      {/* Left Button */}
-      <button
-        onClick={() => scroll("left")}
-        disabled={!canScrollLeft}
-        className="flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
-      >
-        <ChevronLeft className="h-5 w-5 text-slate-700" />
-      </button>
-
-      {/* Carousel Container */}
-      <div className="flex-1 overflow-hidden">
-        <div
-          ref={scrollContainerRef}
-          className="flex gap-6 scroll-smooth"
-          style={{
-            scrollBehavior: "smooth",
-            display: "flex",
-            overflowX: "hidden",
-          }}
+    <div>
+      <div className="relative flex items-center gap-2">
+        {/* Left Button */}
+        <button
+          onClick={() => scroll("left")}
+          disabled={!canScrollLeft}
+          className="flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
         >
-          {testimonials.map((testimonial, i) => (
-            <figure
-              key={i}
-              className="rounded-2xl border p-6 bg-white/70 flex-shrink-0 w-80"
-            >
-              <Quote className="h-6 w-6 text-primary/60" />
-              <blockquote className="mt-3 text-slate-800">
-                {testimonial.text}
-              </blockquote>
-              <figcaption className="mt-3 text-sm text-muted-foreground">
-                — {testimonial.author}
-              </figcaption>
-              <Button asChild variant="outline" className="mt-4 rounded-full">
-                <a href="#">Read More</a>
-              </Button>
-            </figure>
-          ))}
+          <ChevronLeft className="h-5 w-5 text-slate-700" />
+        </button>
+
+        {/* Carousel Container */}
+        <div className="flex-1 overflow-hidden">
+          <div
+            ref={scrollContainerRef}
+            className="flex gap-6 scroll-smooth"
+            style={{
+              scrollBehavior: "smooth",
+              display: "flex",
+              overflowX: "hidden",
+            }}
+          >
+            {testimonials.map((testimonial, i) => (
+              <figure
+                key={i}
+                className="rounded-2xl border p-6 bg-white/70 flex-shrink-0 w-80"
+              >
+                <Quote className="h-6 w-6 text-primary/60" />
+                <blockquote className="mt-3 text-slate-800">
+                  {testimonial.text}
+                </blockquote>
+                <figcaption className="mt-3 text-sm text-muted-foreground">
+                  — {testimonial.author}
+                </figcaption>
+                <Button asChild variant="outline" className="mt-4 rounded-full">
+                  <a href="#">Read More</a>
+                </Button>
+              </figure>
+            ))}
+          </div>
         </div>
+
+        {/* Right Button */}
+        <button
+          onClick={() => scroll("right")}
+          disabled={!canScrollRight}
+          className="flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+        >
+          <ChevronRight className="h-5 w-5 text-slate-700" />
+        </button>
       </div>
 
-      {/* Right Button */}
-      <button
-        onClick={() => scroll("right")}
-        disabled={!canScrollRight}
-        className="flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
-      >
-        <ChevronRight className="h-5 w-5 text-slate-700" />
-      </button>
+      {/* Dot Indicators */}
+      <div className="flex justify-center gap-2 mt-4">
+        {Array.from({ length: Math.max(0, testimonials.length - cardsPerView + 1) }).map(
+          (_, i) => (
+            <div
+              key={i}
+              className={`h-2 rounded-full transition-all ${
+                i === scrollIndex
+                  ? "bg-primary w-6"
+                  : "bg-slate-300 w-2 hover:bg-slate-400"
+              }`}
+            />
+          )
+        )}
+      </div>
     </div>
   );
 }

@@ -14,6 +14,9 @@ import {
 } from "@/components/ui/accordion";
 import { useCounterAnimation } from "@/hooks/use-counter-animation";
 import TopMentorsCarousel from "@/components/TopMentorsCarousel";
+import VideoLessonsCarousel from "@/components/VideoLessonsCarousel";
+import BlogsCarousel from "@/components/BlogsCarousel";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { mentorsData } from "@/data/mentorsData";
 
 const logos = [

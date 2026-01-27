@@ -64,6 +64,21 @@ const blogPosts = [
     date: "October 3, 2024",
     img: "https://images.pexels.com/photos/31948477/pexels-photo-31948477.jpeg",
   },
+  {
+    title: "Career Growth in Aviation Industry",
+    date: "September 28, 2024",
+    img: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg",
+  },
+  {
+    title: "Interview Tips from Experienced Mentors",
+    date: "September 20, 2024",
+    img: "https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg",
+  },
+  {
+    title: "Building Confidence for Your Aviation Career",
+    date: "September 15, 2024",
+    img: "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg",
+  },
 ];
 
 const videoLessons = [

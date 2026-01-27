@@ -82,6 +82,21 @@ const videoLessons = [
     instructor: "Ruchita Lama",
     img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F90dad98178bc4c65b8f1260e3ea1c032?format=webp&width=800",
   },
+  {
+    title: "Safety Procedures & Emergency Response",
+    instructor: "Priya Singh",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3499e689d33e426a9ed553ec8139b091?format=webp&width=800",
+  },
+  {
+    title: "International Airline Standards",
+    instructor: "Deepika Sharma",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F3a4f41282efd428c93c53100230405ec?format=webp&width=800",
+  },
+  {
+    title: "Customer Service Excellence",
+    instructor: "Neha Patel",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F90dad98178bc4c65b8f1260e3ea1c032?format=webp&width=800",
+  },
 ];
 
 function AnimatedCounter({

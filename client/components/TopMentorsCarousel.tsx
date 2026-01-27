@@ -27,8 +27,11 @@ export default function TopMentorsCarousel({
     setScrollIndex(newIndex);
 
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollLeft =
-        newIndex * (cardWidth + gap);
+      const scrollAmount = newIndex * (cardWidth + gap);
+      scrollContainerRef.current.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -36,14 +39,25 @@ export default function TopMentorsCarousel({
   const canScrollRight = scrollIndex < mentors.length - cardsPerView;
 
   return (
-    <div className="relative">
+    <div className="relative flex items-center gap-2">
+      {/* Left Button */}
+      <button
+        onClick={() => scroll("left")}
+        disabled={!canScrollLeft}
+        className="flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+      >
+        <ChevronLeft className="h-5 w-5 text-slate-700" />
+      </button>
+
       {/* Carousel Container */}
-      <div className="overflow-hidden">
+      <div className="flex-1 overflow-hidden">
         <div
           ref={scrollContainerRef}
-          className="flex gap-4 scroll-smooth transition-all duration-300"
+          className="flex gap-4 scroll-smooth"
           style={{
             scrollBehavior: "smooth",
+            display: "flex",
+            overflowX: "hidden",
           }}
         >
           {mentors.map((m) => (
@@ -87,19 +101,11 @@ export default function TopMentorsCarousel({
         </div>
       </div>
 
-      {/* Navigation Buttons */}
-      <button
-        onClick={() => scroll("left")}
-        disabled={!canScrollLeft}
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
-      >
-        <ChevronLeft className="h-5 w-5 text-slate-700" />
-      </button>
-
+      {/* Right Button */}
       <button
         onClick={() => scroll("right")}
         disabled={!canScrollRight}
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-10 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+        className="flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
       >
         <ChevronRight className="h-5 w-5 text-slate-700" />
       </button>

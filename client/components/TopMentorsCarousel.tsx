@@ -90,10 +90,7 @@ export default function TopMentorsCarousel({
                       </span>
                     ))}
                   </div>
-                  <Button
-                    asChild
-                    className="w-full rounded-full h-7 text-xs"
-                  >
+                  <Button asChild className="w-full rounded-full h-7 text-xs">
                     <a href={`/mentor/${m.id}`}>View Profile</a>
                   </Button>
                 </div>
@@ -114,28 +111,28 @@ export default function TopMentorsCarousel({
 
       {/* Dot Indicators */}
       <div className="flex justify-center gap-2 mt-4">
-        {Array.from({ length: Math.max(0, mentors.length - cardsPerView + 1) }).map(
-          (_, i) => (
-            <button
-              key={i}
-              onClick={() => {
-                setScrollIndex(i);
-                if (scrollContainerRef.current) {
-                  const scrollAmount = i * (cardWidth + gap);
-                  scrollContainerRef.current.scrollTo({
-                    left: scrollAmount,
-                    behavior: "smooth",
-                  });
-                }
-              }}
-              className={`h-2 rounded-full transition-all cursor-pointer ${
-                i === scrollIndex
-                  ? "bg-primary w-6"
-                  : "bg-slate-300 w-2 hover:bg-slate-400"
-              }`}
-            />
-          )
-        )}
+        {Array.from({
+          length: Math.max(0, mentors.length - cardsPerView + 1),
+        }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => {
+              setScrollIndex(i);
+              if (scrollContainerRef.current) {
+                const scrollAmount = i * (cardWidth + gap);
+                scrollContainerRef.current.scrollTo({
+                  left: scrollAmount,
+                  behavior: "smooth",
+                });
+              }
+            }}
+            className={`h-2 rounded-full transition-all cursor-pointer ${
+              i === scrollIndex
+                ? "bg-primary w-6"
+                : "bg-slate-300 w-2 hover:bg-slate-400"
+            }`}
+          />
+        ))}
       </div>
     </div>
   );

@@ -50,7 +50,6 @@ const logos = [
   },
 ];
 
-
 const blogPosts = [
   {
     title: "How Mentorship Helps in Building Better Airlines",

@@ -133,7 +133,7 @@ export default function AudienceCarousel({ audiences }: AudienceCarouselProps) {
         <button
           onClick={() => scroll("right")}
           disabled={!canScrollRight}
-          className="flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+          className="hidden md:flex flex-shrink-0 p-2 rounded-full bg-white border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
         >
           <ChevronRight className="h-5 w-5 text-slate-700" />
         </button>

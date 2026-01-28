@@ -12,6 +12,7 @@ export default function TopMentorsCarousel({
 }: TopMentorsCarouselProps) {
   const [scrollIndex, setScrollIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const touchStartX = useRef(0);
 
   const cardsPerView = 3;
   const cardWidth = 208; // w-52 = 13rem = 208px

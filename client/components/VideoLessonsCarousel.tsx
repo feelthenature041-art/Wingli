@@ -20,7 +20,7 @@ export default function VideoLessonsCarousel({
   const touchStartX = useRef(0);
 
   const cardsPerView = 3;
-  const cardWidth = 320; // w-80 = 20rem = 320px
+  const cardWidth = typeof window !== "undefined" && window.innerWidth < 768 ? 288 : 320; // w-72 = 18rem = 288px on mobile, w-80 = 20rem = 320px on md+
   const gap = 24; // gap-6 = 1.5rem = 24px
 
   const scroll = (direction: "left" | "right") => {

@@ -11,11 +11,19 @@ export default function TopMentorsCarousel({
   mentors,
 }: TopMentorsCarouselProps) {
   const [scrollIndex, setScrollIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const touchStartX = useRef(0);
 
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const cardsPerView = 3;
-  const cardWidth = 208; // w-52 = 13rem = 208px
+  const cardWidth = isMobile ? 160 : 208; // w-40 = 10rem = 160px on mobile, w-52 = 13rem = 208px on md+
   const gap = 16; // gap-4 = 1rem = 16px
 
   const scroll = (direction: "left" | "right") => {

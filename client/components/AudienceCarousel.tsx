@@ -83,18 +83,26 @@ export default function AudienceCarousel({ audiences }: AudienceCarouselProps) {
               overflowX: "hidden",
             }}
           >
-            {audiences.map((audience, i) => (
-              <div
-                key={i}
-                className="rounded-2xl border p-6 bg-white text-center hover:shadow-lg transition flex-shrink-0 w-64"
-              >
-                <div className="text-4xl mb-4 h-auto">{audience.icon}</div>
-                <h3 className="font-semibold text-lg">{audience.title}</h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  {audience.desc}
-                </p>
-              </div>
-            ))}
+            {audiences.map((audience, i) => {
+              const IconComponent =
+                iconMap[audience.icon as keyof typeof iconMap];
+              return (
+                <div
+                  key={i}
+                  className="rounded-2xl border p-6 bg-white text-center hover:shadow-lg transition flex-shrink-0 w-64"
+                >
+                  <div className="flex justify-center mb-4">
+                    {IconComponent && (
+                      <IconComponent className="h-10 w-10 text-primary" />
+                    )}
+                  </div>
+                  <h3 className="font-semibold text-lg">{audience.title}</h3>
+                  <p className="text-muted-foreground text-sm mt-2">
+                    {audience.desc}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
 

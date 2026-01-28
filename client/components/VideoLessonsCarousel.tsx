@@ -17,6 +17,7 @@ export default function VideoLessonsCarousel({
 }: VideoLessonsCarouselProps) {
   const [scrollIndex, setScrollIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const touchStartX = useRef(0);
 
   const cardsPerView = 3;
   const cardWidth = 320; // w-80 = 20rem = 320px

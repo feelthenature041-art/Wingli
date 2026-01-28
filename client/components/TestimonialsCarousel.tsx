@@ -91,7 +91,7 @@ export default function TestimonialsCarousel({
             {testimonials.map((testimonial, i) => (
               <figure
                 key={i}
-                className="rounded-2xl border p-6 bg-white/70 flex-shrink-0 w-80"
+                className="rounded-2xl border p-6 bg-white/70 flex-shrink-0 w-72 md:w-80"
               >
                 <Quote className="h-6 w-6 text-primary/60" />
                 <blockquote className="mt-3 text-slate-800">

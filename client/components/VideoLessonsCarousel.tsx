@@ -92,7 +92,7 @@ export default function VideoLessonsCarousel({
             {lessons.map((lesson, i) => (
               <div
                 key={i}
-                className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition flex-shrink-0 w-80"
+                className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition flex-shrink-0 w-72 md:w-80"
               >
                 <div className="relative">
                   <img

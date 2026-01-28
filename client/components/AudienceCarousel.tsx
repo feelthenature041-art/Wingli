@@ -1,11 +1,31 @@
 import { useState, useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Users,
+  Briefcase,
+  Target,
+  Plane,
+  TrendingUp,
+  Zap,
+  Lightbulb,
+} from "lucide-react";
 
 interface Audience {
   icon: string;
   title: string;
   desc: string;
 }
+
+const iconMap = {
+  Users,
+  Briefcase,
+  Target,
+  Plane,
+  TrendingUp,
+  Zap,
+  Lightbulb,
+};
 
 interface AudienceCarouselProps {
   audiences: Audience[];

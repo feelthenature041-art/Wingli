@@ -85,6 +85,8 @@ export default function TestimonialsCarousel({
               display: "flex",
               overflowX: "hidden",
             }}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
             {testimonials.map((testimonial, i) => (
               <figure

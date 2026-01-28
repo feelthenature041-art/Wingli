@@ -103,6 +103,8 @@ export default function AudienceCarousel({ audiences }: AudienceCarouselProps) {
               display: "flex",
               overflowX: "hidden",
             }}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
             {audiences.map((audience, i) => {
               const IconComponent =

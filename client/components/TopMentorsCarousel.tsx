@@ -81,6 +81,8 @@ export default function TopMentorsCarousel({
               display: "flex",
               overflowX: "hidden",
             }}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
             {mentors.map((m) => (
               <div

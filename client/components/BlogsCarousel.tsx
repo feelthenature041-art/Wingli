@@ -90,7 +90,7 @@ export default function BlogsCarousel({ posts }: BlogsCarouselProps) {
             {posts.map((post, i) => (
               <div
                 key={i}
-                className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition flex-shrink-0 w-80"
+                className="rounded-2xl border overflow-hidden bg-white hover:shadow-lg transition flex-shrink-0 w-72 md:w-80"
               >
                 <img
                   src={post.img}

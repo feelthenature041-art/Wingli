@@ -445,11 +445,17 @@ export default function Index() {
       </section>
 
       {/* Video Lessons */}
-      <section className="container py-10 md:py-14 bg-gradient-to-b from-blue-50 to-white border-t border-blue-100">
-        <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
-          Video Lessons
-        </h2>
-        <VideoLessonsCarousel lessons={videoLessons} />
+      <section className="bg-gradient-to-b from-blue-50 to-white border-t border-blue-100 py-10 md:py-14">
+        <div className="container">
+          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
+            Video Lessons
+          </h2>
+        </div>
+        <div className="overflow-hidden">
+          <div className="container">
+            <VideoLessonsCarousel lessons={videoLessons} />
+          </div>
+        </div>
       </section>
 
       {/* Blogs */}

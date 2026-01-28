@@ -17,6 +17,7 @@ import TopMentorsCarousel from "@/components/TopMentorsCarousel";
 import VideoLessonsCarousel from "@/components/VideoLessonsCarousel";
 import BlogsCarousel from "@/components/BlogsCarousel";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import AudienceCarousel from "@/components/AudienceCarousel";
 import { mentorsData } from "@/data/mentorsData";
 
 const logos = [

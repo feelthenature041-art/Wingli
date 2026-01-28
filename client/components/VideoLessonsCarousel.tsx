@@ -86,6 +86,8 @@ export default function VideoLessonsCarousel({
               display: "flex",
               overflowX: "hidden",
             }}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
             {lessons.map((lesson, i) => (
               <div

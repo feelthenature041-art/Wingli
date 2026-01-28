@@ -43,6 +43,26 @@ export default function TestimonialsCarousel({
   const canScrollLeft = scrollIndex > 0;
   const canScrollRight = scrollIndex < testimonials.length - cardsPerView;
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX.current - touchEndX;
+
+    // Only trigger if swipe distance is at least 50px
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        // Swiped left, scroll right
+        scroll("right");
+      } else {
+        // Swiped right, scroll left
+        scroll("left");
+      }
+    }
+  };
+
   return (
     <div>
       <div className="relative flex items-center gap-2">

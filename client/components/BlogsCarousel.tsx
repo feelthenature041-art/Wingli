@@ -84,6 +84,8 @@ export default function BlogsCarousel({ posts }: BlogsCarouselProps) {
               display: "flex",
               overflowX: "hidden",
             }}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
             {posts.map((post, i) => (
               <div

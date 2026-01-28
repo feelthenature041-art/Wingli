@@ -95,7 +95,7 @@ export default function TopMentorsCarousel({
             {mentors.map((m) => (
               <div
                 key={m.id}
-                className="rounded-xl border border-slate-200 overflow-hidden bg-white flex-shrink-0 w-52"
+                className="rounded-xl border border-slate-200 overflow-hidden bg-white flex-shrink-0 w-40 md:w-52"
               >
                 <img
                   src={m.img}

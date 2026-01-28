@@ -243,7 +243,7 @@ export default function Index() {
                   asChild
                   className="h-9 pl-1 pr-4 rounded-full text-sm flex items-center gap-2"
                 >
-                  <a href="/find-a-mentor">
+                  <a href="/chat-mentors">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2Faabe3c1093824ea29bac56af59e4fd99?format=webp&width=100"
                       alt=""
@@ -257,7 +257,7 @@ export default function Index() {
                   variant="outline"
                   className="h-9 pl-1 pr-4 rounded-full text-sm bg-white/75 border-[#1b3d5a]/30 text-[#1b3d5a] flex items-center gap-2"
                 >
-                  <a href="/find-a-mentor">
+                  <a href="/call-mentors">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F728d0307159d4db0b6c1744ba0b9e3d6%2F953c6c3b574b4362ade62411724fab94?format=webp&width=100"
                       alt=""

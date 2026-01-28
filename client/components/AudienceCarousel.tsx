@@ -34,6 +34,7 @@ interface AudienceCarouselProps {
 export default function AudienceCarousel({ audiences }: AudienceCarouselProps) {
   const [scrollIndex, setScrollIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const touchStartX = useRef(0);
 
   const cardsPerView = 4;
   const cardWidth = 256; // w-64 = 16rem = 256px

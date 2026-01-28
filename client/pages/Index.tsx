@@ -450,11 +450,7 @@ export default function Index() {
           <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-8">
             Video Lessons
           </h2>
-        </div>
-        <div className="overflow-hidden">
-          <div className="container">
-            <VideoLessonsCarousel lessons={videoLessons} />
-          </div>
+          <VideoLessonsCarousel lessons={videoLessons} />
         </div>
       </section>
 

@@ -14,11 +14,19 @@ interface BlogsCarouselProps {
 
 export default function BlogsCarousel({ posts }: BlogsCarouselProps) {
   const [scrollIndex, setScrollIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const touchStartX = useRef(0);
 
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const cardsPerView = 3;
-  const cardWidth = 320; // w-80 = 20rem = 320px
+  const cardWidth = isMobile ? 288 : 320; // w-72 = 18rem = 288px on mobile, w-80 = 20rem = 320px on md+
   const gap = 24; // gap-6 = 1.5rem = 24px
 
   const scroll = (direction: "left" | "right") => {

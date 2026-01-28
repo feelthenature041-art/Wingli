@@ -144,6 +144,44 @@ const testimonials = [
   },
 ];
 
+const audiences = [
+  {
+    icon: "🎓",
+    title: "Students & Freshers",
+    desc: "Perfect for beginners entering the aviation industry.",
+  },
+  {
+    icon: "💼",
+    title: "Career Switchers",
+    desc: "Professionals planning to join the airline industry.",
+  },
+  {
+    icon: "🔥",
+    title: "Interview-Ready Aspirants",
+    desc: "Sharpen your skills with real cabin crew mentors.",
+  },
+  {
+    icon: "✈️",
+    title: "Working Cabin Crew",
+    desc: "Upskill and prepare for international airline opportunities.",
+  },
+  {
+    icon: "🌟",
+    title: "Career Changers",
+    desc: "Transform your career with expert guidance from industry leaders.",
+  },
+  {
+    icon: "🎯",
+    title: "Skill Enhancement Seekers",
+    desc: "Develop specialized skills for advanced cabin crew positions.",
+  },
+  {
+    icon: "💡",
+    title: "Confidence Builders",
+    desc: "Build confidence and overcome interview anxiety with mentors.",
+  },
+];
+
 function AnimatedCounter({
   targetNumber,
   isPercentage = false,
